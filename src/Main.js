@@ -68,7 +68,7 @@ function Main() {
 
     
 
-    <div style={{height:'100%',width:'100%',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',fontSize:30}}>
+    {/* <div style={{height:'100%',width:'100%',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',fontSize:30}}>
       <div style={{fontWeight:700,marginBottom:10}}>
         <span style={{color:'#e72441'}}>노래</span>하고, <span style={{color:'#e72441'}}>춤</span>추고, <span style={{color:'#e72441'}}>놀이</span>하며
       </div>
@@ -95,7 +95,7 @@ function Main() {
       </div>
 
       
-    </div>
+    </div> */}
      
 {/* 
     <img src={bg} alt='' style={{width:"100%",height:'100%',position:'absolute',bottom:0,zIndex:10,objectFit:'cover'}}/>
