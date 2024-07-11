@@ -3,9 +3,9 @@
 <svg version="1.1" id="_레이어_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 154.3 179.7" style="enable-background:new 0 0 154.3 179.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFD400;}
+	.st0{fill:#FABE00;}
 	.st1{fill:#FFFFFF;}
-	.st2{clip-path:url(#SVGID_00000103951405070342232620000000188534715190299063_);fill:#443E3B;}
+	.st2{clip-path:url(#SVGID_00000019668858382761269140000016035817461752032436_);fill:#443E3B;}
 </style>
 <g id="_레이어_1-2">
 	<g>
@@ -61,22 +61,16 @@
 				c0.3,0.7,0.5,1.4,0.6,1.9v1.5h4.7V118c0-1.2-0.3-2.5-0.9-3.8C121.7,113.1,120.9,112,119.9,111"/>
 		</g>
 		<g>
-			<defs>
-				<rect id="SVGID_1_" x="-350" y="-214.3" width="1320.9" height="739.8"/>
-			</defs>
-			<clipPath id="SVGID_00000058590464066449710940000014874437830885188501_">
-				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-			</clipPath>
-			<path style="clip-path:url(#SVGID_00000058590464066449710940000014874437830885188501_);fill:#443E3B;" d="M764.4,451.5
-				c0,0,0.2,0.1,0.8,0.4C764.9,451.7,764.4,451.5,764.4,451.5"/>
-		</g>
-		<g>
-			<defs>
-				<rect id="SVGID_00000114777612663384559610000008441073145262786231_" x="-350" y="-214.3" width="1320.9" height="739.8"/>
-			</defs>
-			<clipPath id="SVGID_00000178917984106400624330000015881001276626595995_">
-				<use xlink:href="#SVGID_00000114777612663384559610000008441073145262786231_"  style="overflow:visible;"/>
-			</clipPath>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" x="-350" y="-214.3" width="1320.9" height="739.8"/>
+				</defs>
+				<clipPath id="SVGID_00000054228491601875963990000018339483244989242255_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<path style="clip-path:url(#SVGID_00000054228491601875963990000018339483244989242255_);fill:#443E3B;" d="M764.4,451.5
+					c0,0,0.2,0.1,0.8,0.4C764.9,451.7,764.4,451.5,764.4,451.5"/>
+			</g>
 		</g>
 	</g>
 </g>

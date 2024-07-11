@@ -502,7 +502,7 @@ function Eliivy() {
       <div className='menuBar'>
         <div className='menuBarIn'>
 
-          <img onClick={()=>navigate('../')} src={sk} alt=''/>
+          <img onClick={()=>navigate('../')} src={sk} alt='' style={{cursor:'pointer'}}/>
 
           <div className='menuBarMenu'> 
 

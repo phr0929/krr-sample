@@ -29,8 +29,8 @@
 }
 
 .menuBarIn img{
-    width: 80px;
-    padding: 20px;
+    width: 70px;
+    padding: 10px;
 }
 
 .menuBarMenu{
@@ -295,6 +295,16 @@
     background-color: #fbfbfb;
 }
 
+.mainCenterLayout{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fbfbfb;
+}
+
 .centerLayoutIn{
     width: 1200px;
     height: 100%;
@@ -303,6 +313,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.mainCenterLayoutIn{
+    width: 1200px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top:200px;
+    margin-bottom:150px;
+}
+
+
 
 .ctgrLayout{
     display: flex;
@@ -478,6 +500,7 @@
     width: 40px;
     height: 40px;
     margin-left:20px;
+    cursor: pointer;
 }
  
 .listLayout{ 
@@ -598,4 +621,52 @@
     width: fit-content;
     max-width: 90vw;
     height: auto;
+}
+
+.mainContentsLayout{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    margin:10px;
+    box-shadow: 3px 3px 10px #eee;
+}
+
+.mainContentsLayout img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.mainContentsTitle{
+    font-size: 22px;
+    margin-top:40px;
+}
+
+.mainContents{
+    font-family: Noto Sans KR;
+    height: 60px;
+    margin:10px 10px 20px 10px;
+    font-size: 17px;
+    color:#5d5d5d;
+    display: flex;
+    text-align: center;
+}
+
+.mainContentsBtn{
+    font-family: Noto Sans KR;
+    padding: 20px 50px 20px 50px;
+    border-radius: 100px;
+    color: #fff;
+    margin-bottom:50px;
+    font-size: 17px;
+}
+
+.mainContentsLayout:hover{
+    filter:brightness(1.1);
 }
