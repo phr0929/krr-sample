@@ -348,6 +348,7 @@
     margin-right:5px;
 }
 
+
 .ctgrItemOnKrr{
     color:#fff;
     border:2px solid #fabe00;
@@ -668,5 +669,5 @@
 }
 
 .mainContentsLayout:hover{
-    filter:brightness(1.1);
+    filter:brightness(0.9);
 }
