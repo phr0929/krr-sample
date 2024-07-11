@@ -1,49 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import krr from './resource/krr.png';
-import hiup from './resource/hiup.png';
-import sk from './resource/sk.svg';
-import krrStepOn0 from './resource/krrStep0.svg';
-import krrStepOn1 from './resource/krrStep1.svg';
-import krrStepOn2 from './resource/krrStep2.svg';
-import krrStepOn3 from './resource/krrStep3.svg';
-import hiupStepOn0 from './resource/hiupStep0.svg';
-import hiupStepOn1 from './resource/hiupStep1.svg';
-import hiupStepOn2 from './resource/hiupStep2.svg';
-import hiupStepOn3 from './resource/hiupStep3.svg';
-import pptOn from './resource/ic_ppt_on.svg';
-import pptOff from './resource/ic_ppt_off.svg';
-import workbookOn from './resource/ic_workbook_on.svg';
-import workbookOff from './resource/ic_workbook_off.svg';
-import gameOn from './resource/ic_game_on.svg';
-import gmaeOff from './resource/ic_game_off.svg';  
-import bg from './resource/bg.svg';
-import stars from './resource/stars.svg';
-import circle from './resource/circle.svg';
-import krr5111 from './resource/thumbnail/5-1-1-1.jpg';
-import krr5112 from './resource/thumbnail/5-1-1-2.jpg';
-import krr5113 from './resource/thumbnail/5-1-1-3.jpg';
-import krr5114 from './resource/thumbnail/5-1-1-4.jpg';
-import krr5115 from './resource/thumbnail/5-1-1-5.jpg';
-import krr5121 from './resource/thumbnail/5-1-2-1.jpg';
-import krr5122 from './resource/thumbnail/5-1-2-2.jpg';
-import krr5123 from './resource/thumbnail/5-1-2-3.jpg';
-import krr5124 from './resource/thumbnail/5-1-2-4.jpg';
-import krr5125 from './resource/thumbnail/5-1-2-5.jpg';
-import krr5131 from './resource/thumbnail/5-1-3-2.jpg';
-import krr5132 from './resource/thumbnail/5-1-3-1.jpg';
-import krr5133 from './resource/thumbnail/5-1-3-3.jpg';
-import krr5134 from './resource/thumbnail/5-1-3-4.jpg';
-import krr5135 from './resource/thumbnail/5-1-3-5.jpg';
-import krr5141 from './resource/thumbnail/5-1-4-1.jpg';
-import krr5142 from './resource/thumbnail/5-1-4-2.jpg';
-import krr5143 from './resource/thumbnail/5-1-4-3.jpg';
-import krr5144 from './resource/thumbnail/5-1-4-4.jpg';
-import krr5145 from './resource/thumbnail/5-1-4-5.jpg';
-import character from './resource/character.gif';
-import btn1 from './resource/btn1.svg';
-import btn2 from './resource/btn2.svg';
-import btn3 from './resource/btn3.svg';
+import sk from './resource/sk.svg'; 
 
 import { useNavigate } from 'react-router-dom'
 
@@ -57,6 +14,9 @@ function Main() {
       <div style={{width:1200,display:'flex',flexDirection:'row',height:'100%'}}>
         <img onClick={()=>navigate('./krr')} src={sk} alt='' style={{height:50,padding:20}}/>
         <div style={{width:'100%',display:'flex',fontSize:16,flexDirection:'row',height:'100%',alignItems:'center',justifyContent:'flex-end'}}> 
+
+
+
           {/* <div style={{padding:20,fontWeight:700,color:'#fabe00',marginRight:10}}>까르르한글수</div>
           <div style={{padding:20,color:'#969696',marginRight:10}}>English Hi-up</div>
           

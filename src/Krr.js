@@ -8,10 +8,10 @@ import krrStepOn0 from './resource/krrStep0.svg';
 import krrStepOn1 from './resource/krrStep1.svg';
 import krrStepOn2 from './resource/krrStep2.svg';
 import krrStepOn3 from './resource/krrStep3.svg';
-import hiupStepOn0 from './resource/hiupStep0.svg';
-import hiupStepOn1 from './resource/hiupStep1.svg';
-import hiupStepOn2 from './resource/hiupStep2.svg';
-import hiupStepOn3 from './resource/hiupStep3.svg';
+import eliivyStepOn0 from './resource/eliivyStep0.svg';
+import eliivyStepOn1 from './resource/eliivyStep1.svg';
+import eliivyStepOn2 from './resource/eliivyStep2.svg';
+import eliivyStepOn3 from './resource/eliivyStep3.svg';
 import pptOn from './resource/ic_ppt_on.svg';
 import pptOff from './resource/ic_ppt_off.svg';
 import workbookOn from './resource/ic_workbook_on.svg';
@@ -41,8 +41,6 @@ import krr5142 from './resource/thumbnail/5-1-4-2.jpg';
 import krr5143 from './resource/thumbnail/5-1-4-3.jpg';
 import krr5144 from './resource/thumbnail/5-1-4-4.jpg';
 import krr5145 from './resource/thumbnail/5-1-4-5.jpg';
-import character from './resource/character.gif';
-import luluCharacter from './resource/lulucharacter.gif';
 import krrLogo from './resource/krr logo.svg';
 import hanLogo from './resource/han logo.svg';
 import mathLogo from './resource/math logo.svg'
@@ -55,7 +53,11 @@ import youtubeLogo from './resource/youtubeLogo.svg';
 import blogLogo from './resource/blogLogo.svg';
 import testWorkbook1 from './resource/test1.png';
 import testWorkbook2 from './resource/test2.png';
-import testWorkbook3 from './resource/test3.png';
+import testWorkbook3 from './resource/test3.png'; 
+import character from './resource/character.mp4';
+import luluCharacter from './resource/luluCharacter.mp4';
+// import character from './resource/character.gif';
+// import luluCharacter from './resource/lulucharacter.gif';
 import { useLocation } from 'react-router-dom';
 
 function Krr() {
@@ -417,18 +419,18 @@ function Krr() {
 
             <div onMouseOver={()=>handleMenuMousOver(1)}
               onClick={()=>handleStepChange(0,'../Lulu/')}
-                className={isHovering===1?'titleMenuOn':'titleMenuOff'}>룰루
+                className={isHovering===1?'titleMenuOnKrr':'titleMenuOff'}>룰루
             </div>
             <div onMouseOver={()=>handleMenuMousOver(2)}
-                className={isHovering===2?'titleMenuOn':'titleMenuOff'}
+                className={isHovering===2?'titleMenuOnKrr':'titleMenuOff'}
                 onClick={()=>handleStepChange(step,'../Krr/')}>까르르한글수
             </div>
             <div onMouseOver={()=>handleMenuMousOver(3)}
-                className={isHovering===3?'titleMenuOn':'titleMenuOff'}
-                onClick={()=>handleStepChange(4,'../Hiup/')}>English Hi-up
+                className={isHovering===3?'titleMenuOnKrr':'titleMenuOff'}
+                onClick={()=>handleStepChange(4,'../EliIvy/')}>EliIvy
             </div>
             
-            <div className='goSkBtn' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
+            <div className='goSkBtn goSkKrr' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
           </div>
         </div>
       </div> 
@@ -439,12 +441,13 @@ function Krr() {
                 <div onClick={()=>handleStepChange(0,'../Lulu/')}  className={step===0?'sm subMenuItemOn':'sm subMenuItemOff'}>
                   <img src={krrStepOn0} alt=''/>
                   <div className='menuText'>STEP1</div>
-                  <div className='menuLine'/>
+                  <div className='menuLine lineOn1'/>
                   
                 </div>
              
-
-                <img className='subMenuCharacter' src={luluCharacter} alt='' style={{marginLeft:315}}/>
+                <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
+                  <source src={luluCharacter} type="video/mp4"></source>
+                </video>
           </div>
           :isHovering===2?
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
@@ -453,14 +456,14 @@ function Krr() {
               <div onClick={()=>handleStepChange(1,'../Krr/')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
               </div>
             
 
               <div onClick={()=>handleStepChange(2,'../Krr/')}   className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
                 
               </div>
             
@@ -468,42 +471,45 @@ function Krr() {
               <div onClick={()=>handleStepChange(3,'../Krr/')}   className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
                 
               </div>
             
-              <img className='subMenuCharacter' src={character} alt='' style={{marginLeft:205}}/>
+              <video  className='subMenuCharacter' autoPlay muted loop style={{marginLeft:205}}>
+                <source src={character} type="video/mp4"></source>
+              </video>
+
           </div>
           :
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
               {/* <div style={{minWidth:300}}/> */}
               
-              <div onClick={()=>handleStepChange(4,'../Hiup/')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
-                <img src={hiupStepOn0} alt=''/>
+              <div onClick={()=>handleStepChange(4,'../EliIvy/')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={eliivyStepOn0} alt=''/>
                 <div className='menuText'>STEP0</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(5,'../Hiup/')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
-                <img src={hiupStepOn1} alt=''/>
+              <div onClick={()=>handleStepChange(5,'../EliIvy/')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={eliivyStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
                 
               </div>
             
 
-              <div onClick={()=>handleStepChange(6,'../Hiup/')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
-                <img src={hiupStepOn2} alt=''/>
+              <div onClick={()=>handleStepChange(6,'../EliIvy/')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={eliivyStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
                 
               </div>
 
-              <div onClick={()=>handleStepChange(7,'../Hiup/')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
-                <img src={hiupStepOn3} alt=''/>
+              <div onClick={()=>handleStepChange(7,'../EliIvy/')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={eliivyStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
-                <div className='menuLine'/>
+                <div className='menuLine lineOn1'/>
                 
               </div>
 
@@ -522,16 +528,16 @@ function Krr() {
           <div className='centerLayoutIn'>
  
             <div className='ctgrLayout'>
-              <div onClick={()=>handleCtgrCk(0)} className={ctgr===0?'ctgrItemOn ctgrItem':'ctgrItemOff ctgrItem'}>
+              <div onClick={()=>handleCtgrCk(0)} className={ctgr===0?'ctgrItemOnKrr ctgrItem':'ctgrItemOff ctgrItem'}>
                 1학기
               </div>
-              <div onClick={()=>handleCtgrCk(70)} className={ctgr===70?'ctgrItemOn ctgrItem':'ctgrItemOff ctgrItem'}>
+              <div onClick={()=>handleCtgrCk(70)} className={ctgr===70?'ctgrItemOnKrr ctgrItem':'ctgrItemOff ctgrItem'}>
                 7호
               </div>
-              <div onClick={()=>handleCtgrCk(80)} className={ctgr===80?'ctgrItemOn ctgrItem':'ctgrItemOff ctgrItem'}>
+              <div onClick={()=>handleCtgrCk(80)} className={ctgr===80?'ctgrItemOnKrr ctgrItem':'ctgrItemOff ctgrItem'}>
                 8호
               </div> 
-              <div onClick={()=>handleCtgrCk(100)} className={ctgr===100?'ctgrItemOn ctgrItem':'ctgrItemOff ctgrItem'}>
+              <div onClick={()=>handleCtgrCk(100)} className={ctgr===100?'ctgrItemOnKrr ctgrItem':'ctgrItemOff ctgrItem'}>
                 음악
               </div> 
               
@@ -573,7 +579,7 @@ function Krr() {
               : 
               <div className='musicListLayout'>             
                 {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
-                  <div className='musicList' key={idx}>
+                  <div className='musicList yellowbox' key={idx}>
                     <div className='musicItem'>
                       <img src={val.img} alt=''/>
                     </div>

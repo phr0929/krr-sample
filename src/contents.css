@@ -50,14 +50,25 @@
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    background-color: #fabe00;
     color:#fff;
     font-size: 16px;
+} 
+
+.goSkKrr{
+    background-color: #fabe00;
 }
 
-.titleMenuOn{
+.goSkLulu{
+    background-color: #e63d90;
+}
+
+.goSkEliivy{
+    background-color: #29b5b2;
+}
+
+.titleMenuOnKrr{
+    animation: fontColor 0.2s forwards;
     font-weight: 500;
-    color:#fabe00;
     padding: 20px;
     width: 160px;
     min-width: 160px;
@@ -65,8 +76,53 @@
     text-align: center;
 }
 
+.titleMenuOnLulu{
+    animation: fontColorLulu 0.2s forwards;
+    font-weight: 500;
+    padding: 20px;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    text-align: center;
+}
+
+.titleMenuOnEliivy{
+    animation: fontColorEliivy 0.2s forwards;
+    font-weight: 500;
+    padding: 20px;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    text-align: center;
+}
+
+@keyframes fontColorLulu{
+    from { 
+    }
+    to{
+        color:#e63d90;
+    }
+}
+@keyframes fontColorEliivy{
+    from { 
+    }
+    to{
+        color:#29b5b2;
+    }
+}
+
+
+@keyframes fontColor{
+    from { 
+    }
+    to{
+        color:#fabe00;
+    }
+}
+
+
+ 
 .subMenu{
-    cursor: pointer;
     box-shadow: 10px 10px 10px #f3f3f390;
     position: fixed;
     padding-top:110px;
@@ -121,10 +177,11 @@
 .subMenuCharacter{
     width: 150px;
     height: auto;
-    margin-bottom:-2px;
 }
 
 .sm{
+    
+    cursor: pointer;
 }
 
 .sm:hover{
@@ -167,13 +224,29 @@
     justify-content: center;
 }
 
-.subMenuItemOn .menuLine{
+.menuLine{
     width: 100%;
-    background-color: #fabe00;
     height: 5px;
     margin-top:10px;
     border-radius: 50px;
 }
+
+.subMenuItemOn .lineOn0{
+    background-color: #e63d90;
+}
+
+.subMenuItemOn .lineOn1{
+    background-color: #fabe00;
+}
+
+.subMenuItemOn .lineOn2{
+    background-color: #00a74d;
+}
+
+.subMenuItemOn .lineOn3{
+    background-color: #29b5b2;
+}
+
 
 .subMenuItemOff{
     display: flex;
@@ -201,13 +274,7 @@
     align-items: center;
     justify-content: center;
 }
-
-.subMenuItemOff .menuLine{
-    width: 100%;
-    height: 5px;
-    margin-top:10px;
-}
-
+ 
 .titleMenuOff{
     padding: 20px;
     width: 160px;
@@ -215,6 +282,7 @@
     max-width: 160px;
     text-align: center;
 } 
+ 
 
 .centerLayout{
     display: flex;
@@ -245,42 +313,48 @@
     margin-bottom:20px;
 }
 
-.ctgrItemOn{
+.ctgrItem{
     cursor: pointer;
     border-radius: 50px;
-    background-color: #fabe00;
     width: 120px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#fff;
     font-size: 18px;
     margin-left:5px;
     margin-right:5px;
-    border:2px solid #fabe00;
 }
+
+.ctgrItemOnKrr{
+    color:#fff;
+    border:2px solid #fabe00;
+    background-color: #fabe00;
+}
+
+.ctgrItemOnLulu{
+    color:#fff;
+    border:2px solid #e63d90;
+    background-color: #e63d90;
+}
+
+
+.ctgrItemOnEliivy{
+    color:#fff;
+    border:2px solid #29b5b2;
+    background-color: #29b5b2;
+}
+
+
+
+
 
 .ctgrItemOff{
-    cursor: pointer;
-    border-radius: 50px;
+    color:#323232;
     border:2px solid #eee;
     background-color: #fff;
-    width: 120px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-left:5px;
-    margin-right:5px;
 }
-
-.ctgrItem:hover{
-    background-color: #fabe00;
-    border:2px solid #fabe00;
-    color:#fff;
-}
+ 
 
 .contentsLayout{
     width: 210px;
@@ -309,9 +383,9 @@
 }
 
 .bluebox{
-    background-color: #ebf2ff;
-    border: 1px solid #7ba8ef30;
-    color:#7ba8ef;    
+    background-color: #e8f7f6;
+    border: 1px solid #51b7b230;
+    color:#51b7b2;    
 }
 
 .contentsImgBox{
@@ -433,9 +507,6 @@
     border-radius: 10px;
     margin:30px;
     padding:20px;
-    background-color: #ffebeb;
-    border: 1px solid #ff888830;
-    color:#ff8888;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -454,6 +525,10 @@
     min-height: 300px;
     max-height: 300px;
     border-radius: 10px;
+}
+
+.musicList:hover{
+    margin-top:0px;
 }
 
 .musicItem img{
