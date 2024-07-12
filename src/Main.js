@@ -86,7 +86,7 @@ function Main() {
   // 1학기 -> 0
   // 7호 -> 70
   // 8호 -> 80
-  // 음악 -> 100
+  // 기타 -> 100
   
   const handleDialog=(title,img)=>{
     setDialog(true);

@@ -1,4 +1,72 @@
 
+
+@media only screen and (min-width: 1400px){
+    /* pc */
+    :root{
+      --width:1200px;
+      --iconSize:27px;
+      --navHeight:80px;
+      --titleFontSize:35px; 
+      --gridSize:300px;
+      --gridColumn:1fr 1fr 1fr;
+      --workCtgrMargin:50px;
+    }
+    .workBtnLayout:hover{
+      transform: translateY(-5px);
+    }
+  
+    .workImg:hover{
+      filter: brightness(0.6); 
+    }  
+  }
+
+@media only screen and (min-width: 1024px) and (max-width: 767px) {
+    /* pc */
+    :root{
+      --width:1000px;
+      --iconSize:27px;
+      --navHeight:80px;
+      --titleFontSize:35px; 
+      --gridSize:300px;
+      --gridColumn:1fr 1fr 1fr;
+      --workCtgrMargin:50px;
+    }
+    .workBtnLayout:hover{
+      transform: translateY(-5px);
+    }
+  
+    .workImg:hover{
+      filter: brightness(0.6); 
+    }  
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* tablet */
+    :root{
+      --width:calc(100% - 40px);
+      --iconSize:27px;
+      --navHeight:70px;
+      --titleFontSize:35px;
+      --gridSize:300px;
+      --gridColumn:1fr 1fr;
+      --workCtgrMargin:30px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) { 
+    :root{
+      --width:calc(100% - 30px);
+      --iconSize:25px;
+      --navHeight:60px;
+      --titleFontSize:26px; 
+      --gridSize:calc(100vw - 30px);
+      --gridColumn:1fr;
+      --workCtgrMargin:15px;
+    }
+}
+    
+
+
 .mainLayout{
     display: flex;
     height: 100%;
@@ -306,7 +374,7 @@
 }
 
 .centerLayoutIn{
-    width: 1200px;
+    width: var(--width);
     height: 100%;
     margin-top:150px;
     align-items: center;
@@ -315,7 +383,7 @@
 }
 
 .mainCenterLayoutIn{
-    width: 1200px;
+    width: var(--width);
     height: 100%;
     justify-content: center;
     display: flex;
@@ -466,7 +534,7 @@
 }
 
 .bottomLayoutIn{
-    width: 1200px;
+    width: var(--width);
     padding:50px 10px 50px 10px;
     display: flex;
     flex-direction: row;

@@ -81,7 +81,7 @@ function Eliivy() {
   // 1학기 -> 0
   // 7호 -> 70
   // 8호 -> 80
-  // 음악 -> 100
+  // 기타 -> 100
   
   const handleDialog=(title,img)=>{
     setDialog(true);
@@ -628,7 +628,7 @@ function Eliivy() {
                 8호
               </div> 
               <div onClick={()=>handleCtgrCk(100)} className={ctgr===100?'ctgrItemOnEliivy ctgrItem':'ctgrItemOff ctgrItem'}>
-                음악
+                기타
               </div> 
               
               
