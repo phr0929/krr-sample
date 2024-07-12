@@ -200,7 +200,7 @@ useEffect(() => {
 
         <div className='mainContentsLayout'   onClick={()=>navigate('./EliIvy')}>
           <img src={eliivyImg} alt=''/>
-          <div className='mainContentsTitle'>Eilivy English</div>
+          <div className='mainContentsTitle'>Eliivy English</div>
           <div className='mainContents'>즐기면서 익히는<br/>신나는 영어세상!</div>
           <div className='mainContentsBtn' style={{backgroundColor:'#29b5b2'}}>
             {'컨텐츠 보러가기 >'}
