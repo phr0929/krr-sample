@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './swiper.css';
 import krr from './resource/krr.png';
 import hiup from './resource/hiup.png';
 import sk from './resource/sk.svg';
@@ -62,8 +63,10 @@ import luluCharacter from './resource/luluCharacter.mp4';
 // import character from './resource/character.gif';
 // import luluCharacter from './resource/lulucharacter.gif';
 import { useLocation } from 'react-router-dom';
+import { Swiper, SwiperSlide } from "swiper/react" 
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
-
+ 
 function Main() {
 
   const navigate = useNavigate()
@@ -73,7 +76,8 @@ function Main() {
  
   const location = useLocation();
   const stepIdx = location?.state?.idx!==undefined?location?.state?.idx:1;
- 
+  const [swiper,setSwiper] = useState(false);
+  const [pageNumber,setPageNumber] = useState(0);
   const [isHovering, setIsHovering] = useState(2);
   const [scrollDown,setScrollDown] = useState(true); 
   const [scrollY,setScrollY] = useState(0);
@@ -164,7 +168,7 @@ useEffect(() => {
     <div className='menuBar'>
       <div className='menuBarIn'>
 
-        <img src={sk} alt=''/>
+        <img className='logoImg' onClick={()=>navigate('../')} src={sk} alt='' style={{cursor:'auto'}}/>
 
         <div className='menuBarMenu'> 
  
@@ -180,7 +184,107 @@ useEffect(() => {
 
       
       <div className='mainCenterLayoutIn'>
-        <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
+
+
+      <Swiper     
+        onSwiper = {setSwiper}
+        style={{top:0,left:0,width:'100vw',height:'100%'}}
+            modules={[Navigation, Pagination, ]} 
+            direction='horizontal' 
+            speed={1000}
+            mousewheel= {true}
+            pagination={
+                {el: ".swiper-pagination", 
+                type : 'bullets',
+                clickable: true,}
+            }  
+            onSlideChange={(e) =>  
+                setPageNumber(e.realIndex)
+            }
+            autoHeight={true} 
+            slidesPerView={3} 
+            initialSlide={0}                          
+            loop={false}
+            loopedSlides={1}
+            observer={true}
+            observeParents={true}
+            resistance={true} >
+             
+ 
+
+
+                <SwiperSlide> 
+                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative'}}>
+                      sss
+                    </div>
+                </SwiperSlide> 
+
+ 
+
+              
+                <SwiperSlide> 
+                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative',}}>
+                      zz
+                    </div>
+                </SwiperSlide> 
+               
+
+
+                
+                <SwiperSlide> 
+                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative',borderBottom:0}}>
+
+                       sssss
+                    </div>
+                </SwiperSlide> 
+
+ 
+              
+
+      </Swiper>
+
+
+      {/* <Swiper     
+        onSwiper = {setSwiper}
+        style={{top:0,left:0,width:'100vw',height:'100%'}} 
+            direction='vertical'  
+            slidesPerView={2}
+            
+            mousewheel= {true}
+            pagination={
+                {el: ".swiper-pagination", 
+                type : 'bullets',
+                clickable: true,}
+            }  
+            onSlideChange={(e) =>  
+                setPageNumber(e.realIndex)
+            }>
+ 
+
+            <SwiperSlide> 
+            <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
+              <img src={luluImg} alt=''/>
+              <div className='mainContentsTitle'>안녕! 룰루</div>
+              <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
+              <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
+                {'컨텐츠 보러가기 >'}
+              </div>
+            </div> 
+            </SwiperSlide>
+            <SwiperSlide> 
+            <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
+              <img src={luluImg} alt=''/>
+              <div className='mainContentsTitle'>안녕! 룰루</div>
+              <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
+              <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
+                {'컨텐츠 보러가기 >'}
+              </div>
+            </div> 
+            </SwiperSlide>
+          </Swiper> */}
+
+
+        {/* <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
           <img src={luluImg} alt=''/>
           <div className='mainContentsTitle'>안녕! 룰루</div>
           <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
@@ -205,7 +309,7 @@ useEffect(() => {
           <div className='mainContentsBtn' style={{backgroundColor:'#29b5b2'}}>
             {'컨텐츠 보러가기 >'}
           </div>
-        </div> 
+        </div>  */}
       </div>
 
       <div className='bottomLayout'>
@@ -226,10 +330,10 @@ useEffect(() => {
         
       </div>
     </div>
-
-    <img src={stars} alt='' className='ani1' style={{width:50,height:'auto',position:'fixed',bottom:250,left:250,zIndex:15}}/>
-    <img src={circle} alt='' className='ani2' style={{width:200,height:'auto',position:'fixed',bottom:50,left:50,zIndex:15}}/>
-    <img src={circle} alt='' className='ani3' style={{width:150,height:'auto',position:'fixed',bottom:240,right:50,zIndex:15}}/>
+    
+    <img src={stars} alt='' className='stars' />
+    <img src={circle} alt='' className='circle1'/>
+    <img src={circle} alt='' className='circle2'/>
     
   </div>
   );

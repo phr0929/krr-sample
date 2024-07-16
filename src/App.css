@@ -1,6 +1,6 @@
 .app{
     font-family: BMJUA; 
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .mainLayout{
@@ -22,36 +22,6 @@
 .contentsBox::-webkit-scrollbar{
  display: none;   
 }
-
-.ani1{
-    animation: rotate 5s Linear infinite;
-}
-
-.ani2{
-    animation: rotate2 12s Linear infinite;
-}
-
-.ani3{
-    animation: rotate 10s Linear infinite;
-}
-
-@keyframes rotate{
-    from {
-        transform: rotate(0deg),
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate2{
-    from {
-        transform: rotate(0deg),
-    }
-    to {
-        transform: rotate(-360deg);
-    }
-} 
 
 @font-face {
     font-family: 'BMJUA';
