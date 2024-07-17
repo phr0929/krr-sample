@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './swiper.css';
 import krr from './resource/krr.png';
 import hiup from './resource/hiup.png';
 import sk from './resource/sk.svg';
@@ -64,8 +63,11 @@ import luluCharacter from './resource/luluCharacter.mp4';
 // import luluCharacter from './resource/lulucharacter.gif';
 import { useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react" 
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import SwiperCore, { Navigation, Pagination, Autoplay, Mousewheel } from "swiper"
+import "swiper/css"
 
+SwiperCore.use([Autoplay])
+SwiperCore.use([Mousewheel])
  
 function Main() {
 
@@ -76,8 +78,6 @@ function Main() {
  
   const location = useLocation();
   const stepIdx = location?.state?.idx!==undefined?location?.state?.idx:1;
-  const [swiper,setSwiper] = useState(false);
-  const [pageNumber,setPageNumber] = useState(0);
   const [isHovering, setIsHovering] = useState(2);
   const [scrollDown,setScrollDown] = useState(true); 
   const [scrollY,setScrollY] = useState(0);
@@ -92,6 +92,10 @@ function Main() {
   // 8호 -> 80
   // 기타 -> 100
   
+  const [pageWidth,setPageWidth] = useState('')
+  const [swiper,setSwiper] = useState(false);
+  const [pageNumber,setPageNumber] = useState(0);
+
   const handleDialog=(title,img)=>{
     setDialog(true);
     setDialogTitle(title);
@@ -100,79 +104,77 @@ function Main() {
 
   
 
-window.addEventListener('scroll', (e) => {
-   
+  window.addEventListener('scroll', (e) => {
+    
 
-  if(window.scrollY>scrollY){
-    setScrollDown(false) 
-    setScrollY(window.scrollY)
-  }else{ 
-    // setScrollDown(true) 
-    // setScrollY(window.scrollY)
-  }
-   
- 
-});
-
-const handleMenuMousOver = (idx) => {
-  setScrollDown(true)
-  setIsHovering(idx)
-}
+    if(window.scrollY>scrollY){
+      setScrollDown(false) 
+      setScrollY(window.scrollY)
+    }else{ 
+      // setScrollDown(true) 
+      // setScrollY(window.scrollY)
+    }
+    
   
-const handleStepChange = (idx,link) => {
-  setStep(idx)
-  window.scrollTo(0,0)
-  setScrollY(0)
-  navigate(link, {state:{idx:idx}})
-}
+  });
 
-const handleMouseOut = (idx) => {
-  
-  if(scrollY>=90){
-    setScrollDown(false)
+  const handleMenuMousOver = (idx) => {
+    setScrollDown(true)
+    setIsHovering(idx)
+  }
+    
+  const handleStepChange = (idx,link) => {
+    setStep(idx)
+    window.scrollTo(0,0)
+    setScrollY(0)
+    navigate(link, {state:{idx:idx}})
   }
 
-  setIsHovering(idx)
-}
+  const handleMouseOut = (idx) => {
+    
+    if(scrollY>=90){
+      setScrollDown(false)
+    }
 
-const handleGoVimeo = (link) => {
-  window.open('https://vimeo.com/'+link,"_top")
-}
-
-const handleGame = (code) => {
-  window.open(code,'pop')
-}
-
-const handleCtgrCk = (idx) => {
-  if(idx<=100){
-    setCtgr(idx)
-  }else{
-    setCtgr(100)
+    setIsHovering(idx)
   }
 
-  window.scrollTo(0,0)  
-  setScrollY(0)
-}
-
-useEffect(() => {
-  if(dialog){
-
-    document.body.style= `overflow: hidden`;
-    return () => document.body.style = `overflow: auto`
+  const handleGoVimeo = (link) => {
+    window.open('https://vimeo.com/'+link,"_top")
   }
-}, [dialog])
 
+  const handleGame = (code) => {
+    window.open(code,'pop')
+  }
 
+  const handleCtgrCk = (idx) => {
+    if(idx<=100){
+      setCtgr(idx)
+    }else{
+      setCtgr(100)
+    }
+
+    window.scrollTo(0,0)  
+    setScrollY(0)
+  }
+
+  useEffect(() => {
+    if(dialog){
+
+      document.body.style= `overflow: hidden`;
+      return () => document.body.style = `overflow: auto`
+    }
+  }, [dialog])
+   
   return (
     <div className='mainLayout'>
     <div className='menuBar'>
       <div className='menuBarIn'>
 
         <img className='logoImg' onClick={()=>navigate('../')} src={sk} alt='' style={{cursor:'auto'}}/>
-
+ 
         <div className='menuBarMenu'> 
  
-          
           <div className='goSkBtn goSkKrr' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
         </div>
       </div>
@@ -183,116 +185,72 @@ useEffect(() => {
     <div className='mainCenterLayout'>
 
       
-      <div className='mainCenterLayoutIn'>
+      {/* <div className='mainCenterLayoutIn'> */}
 
-
-      <Swiper     
-        onSwiper = {setSwiper}
-        style={{top:0,left:0,width:'100vw',height:'100%'}}
-            modules={[Navigation, Pagination, ]} 
-            direction='horizontal' 
-            speed={1000}
-            mousewheel= {true}
-            pagination={
-                {el: ".swiper-pagination", 
-                type : 'bullets',
-                clickable: true,}
-            }  
-            onSlideChange={(e) =>  
-                setPageNumber(e.realIndex)
-            }
-            autoHeight={true} 
-            slidesPerView={3} 
-            initialSlide={0}                          
-            loop={false}
-            loopedSlides={1}
-            observer={true}
-            observeParents={true}
-            resistance={true} >
-             
- 
-
-
-                <SwiperSlide> 
-                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative'}}>
-                      sss
-                    </div>
-                </SwiperSlide> 
-
- 
-
-              
-                <SwiperSlide> 
-                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative',}}>
-                      zz
-                    </div>
-                </SwiperSlide> 
-               
-
-
-                
-                <SwiperSlide> 
-                    <div className='doubleportionMainPage' style={{backgroundColor:'#ffffff',position:'relative',borderBottom:0}}>
-
-                       sssss
-                    </div>
-                </SwiperSlide> 
-
- 
-              
-
+    
+      <Swiper  
+        onSwiper={setSwiper}
+        modules={[Navigation, Pagination]} 
+        className='mainCenterLayoutIn'
+        style={{zIndex:100,position:'relative'}}
+        slidesPerView={1.5}
+        breakpoints={{
+          768:{
+            slidesPerView:3,
+            centeredSlides:false,
+          },}
+          
+        } 
+        spaceBetween={0} 
+        centeredSlides={true} 
+        initialSlide={1}
+        
+        observer={true}
+        observeParents={true}
+        > 
+            
+        <SwiperSlide>
+          <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
+            <img src={luluImg} alt=''/>
+            <div className='mainContentsTitle'>안녕! 룰루</div>
+            <div className='mainContents'>즐겁게 배우는<br/>4세 글놀이 수놀이</div>
+            <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
+              {'컨텐츠 보러가기 >'}
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+        
+          <div className='mainContentsLayout'   onClick={()=>navigate('./Krr')}   >
+            <img src={krrImg} alt=''/>
+            <div className='mainContentsTitle'>까르르한글수</div>
+            <div className='mainContents'>놀이하면서 습득해가는<br/>놀라운 한글 수학세상!</div>
+            <div className='mainContentsBtn' style={{backgroundColor:'#fabe00'}}>
+              {'컨텐츠 보러가기 >'}
+            </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='mainContentsLayout'   onClick={()=>navigate('./EliIvy')}>
+            <img src={eliivyImg} alt=''/>
+            <div className='mainContentsTitle'>Eliivy English</div>
+            <div className='mainContents'>즐기면서 익히는<br/>신나는 영어세상!</div>
+            <div className='mainContentsBtn' style={{backgroundColor:'#29b5b2'}}>
+              {'컨텐츠 보러가기 >'}
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
 
-
-      {/* <Swiper     
-        onSwiper = {setSwiper}
-        style={{top:0,left:0,width:'100vw',height:'100%'}} 
-            direction='vertical'  
-            slidesPerView={2}
-            
-            mousewheel= {true}
-            pagination={
-                {el: ".swiper-pagination", 
-                type : 'bullets',
-                clickable: true,}
-            }  
-            onSlideChange={(e) =>  
-                setPageNumber(e.realIndex)
-            }>
- 
-
-            <SwiperSlide> 
-            <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
-              <img src={luluImg} alt=''/>
-              <div className='mainContentsTitle'>안녕! 룰루</div>
-              <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
-              <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
-                {'컨텐츠 보러가기 >'}
-              </div>
-            </div> 
-            </SwiperSlide>
-            <SwiperSlide> 
-            <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
-              <img src={luluImg} alt=''/>
-              <div className='mainContentsTitle'>안녕! 룰루</div>
-              <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
-              <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
-                {'컨텐츠 보러가기 >'}
-              </div>
-            </div> 
-            </SwiperSlide>
-          </Swiper> */}
-
-
+     
         {/* <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
-          <img src={luluImg} alt=''/>
-          <div className='mainContentsTitle'>안녕! 룰루</div>
-          <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
-          <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
-            {'컨텐츠 보러가기 >'}
-          </div>
-        </div> 
-
+              <img src={luluImg} alt=''/>
+              <div className='mainContentsTitle'>안녕! 룰루</div>
+              <div className='mainContents'>노래하고, 춤추고! 즐겁게 배우는<br/>4세 글놀이 수놀이</div>
+              <div className='mainContentsBtn'  style={{backgroundColor:'#e63d90'}}>
+                {'컨텐츠 보러가기 >'}
+              </div>
+            </div> 
         <div className='mainContentsLayout'   onClick={()=>navigate('./Krr')}   >
           <img src={krrImg} alt=''/>
           <div className='mainContentsTitle'>까르르한글수</div>
@@ -301,7 +259,6 @@ useEffect(() => {
             {'컨텐츠 보러가기 >'}
           </div>
         </div> 
-
         <div className='mainContentsLayout'   onClick={()=>navigate('./EliIvy')}>
           <img src={eliivyImg} alt=''/>
           <div className='mainContentsTitle'>Eliivy English</div>
@@ -309,8 +266,8 @@ useEffect(() => {
           <div className='mainContentsBtn' style={{backgroundColor:'#29b5b2'}}>
             {'컨텐츠 보러가기 >'}
           </div>
-        </div>  */}
-      </div>
+        </div> */}
+      {/* </div> */}
 
       <div className='bottomLayout'>
         <div className='bottomLayoutIn'>
