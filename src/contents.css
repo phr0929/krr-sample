@@ -40,6 +40,7 @@
       --mainCenterMarginBottom:150px;
       --mainBtnPadding:20px 50px 20px 50px;
       --mainBtnMarginBottom:50px;
+      --mainBtnHeight:60px;
     }
 
     .contentsLayout:hover{
@@ -59,7 +60,7 @@
     }
   }
 
-@media only screen and (min-width: 1024px) and (max-width: 1249px) {
+@media only screen and (min-width: 1025px) and (max-width: 1249px) {
     /* pc */
     :root{
       --width:1000px;
@@ -93,6 +94,7 @@
       --mainCenterMarginBottom:150px;
       --mainBtnPadding:20px 50px 20px 50px;
       --mainBtnMarginBottom:50px;
+      --mainBtnHeight:60px;
     }
 
     .contentsLayout:hover{
@@ -113,22 +115,22 @@
     }
   }
   
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* tablet */
     :root{
       --width:calc(100vw - 40px);
       --mainWidth:calc(100vw - 40px);
-      --mainMenuFontSize:20px;
+      --mainMenuFontSize:22px;
       --fontSize:20px;
       --logoWidth:70px;
       --menuDisplay:none;
       --navDisplay:flex;
-      --bottomPadding:50px 0px 50px 10px;
-      --bottomDirection:row;
-      --bottomAlign:flex-start;
-      --bottomTextMargin:0px 0px 0px 60px;
-      --bottomBtnAlign:flex-end;
-      --bottomBtnMargin:0px 10px 0px 10px;
+      --bottomPadding:40px 0px 30px 10px;
+      --bottomDirection:column;
+      --bottomAlign:center;
+      --bottomTextMargin:30px 0px 0px 0px;
+      --bottomBtnAlign:center;
+      --bottomBtnMargin:40px 10px 30px 10px;
       --menuTextFont:17px;
       --stepBtnMargin:30px; 
       --centerMarginTop:150px;
@@ -142,11 +144,12 @@
       --contentsItemWidth:210px;
       --figureDisplay:flex;
       --musicItemWidth:300px;
-      --mainMenuWidth:calc((100vw - 40px) / 3 - 30px);
+      --mainMenuWidth:calc((100vw - 30px) * 0.6); 
       --mainCenterMarginTop:200px;
       --mainCenterMarginBottom:150px;
-      --mainBtnPadding:20px 50px 20px 50px;
+      --mainBtnPadding:12px 20px 12px 20px;
       --mainBtnMarginBottom:50px;
+      --mainBtnHeight:50px;
     }
 
     
@@ -156,7 +159,7 @@
     :root{
       --width:calc(100vw - 30px);
       --mainWidth:100vw;
-      --mainMenuFontSize:22px;
+      --mainMenuFontSize:20px;
       --fontSize:17px;
       --logoWidth:50px;
       --menuDisplay:none;
@@ -183,8 +186,9 @@
       --mainMenuWidth:calc((100vw - 30px) * 0.65);   
       --mainCenterMarginTop:120px;  
       --mainCenterMarginBottom:90px; 
-      --mainBtnPadding:10px 30px 10px 30px;
-      --mainBtnMarginBottom:20px;
+      --mainBtnPadding:12px 20px 12px 20px;
+      --mainBtnMarginBottom:40px;
+      --mainBtnHeight:50px;
     }
 }
     
@@ -193,7 +197,7 @@
     :root{
       --width:calc(100vw - 30px);
       --mainWidth:100vw;
-      --mainMenuFontSize:22px;
+      --mainMenuFontSize:20px;
       --fontSize:17px;
       --logoWidth:50px;
       --menuDisplay:none;
@@ -220,8 +224,9 @@
       --mainMenuWidth:calc((100vw - 30px) * 0.65);  
       --mainCenterMarginTop:120px;        
       --mainCenterMarginBottom:90px;
-      --mainBtnPadding:15px 30px 15px 30px;
+      --mainBtnPadding:12px 20px 12px 20px;
       --mainBtnMarginBottom:40px;
+      --mainBtnHeight:50px;
     }
 }
 
@@ -786,6 +791,7 @@
     position: relative;
     z-index: 1000;
     width:100vw;
+    min-height: fit-content;
     height: 100%;
     background-color: #eee;
     display: flex;
@@ -963,7 +969,7 @@
 }
 
 .mainContentsLayout{
-    font-size: calc(var(--fontSize) - 3px);
+    font-size: calc(var(--mainMenuFontSize) - 6px);
     cursor: pointer;
     position: relative;
     z-index: 100;
@@ -988,12 +994,13 @@
 
 .mainContentsTitle{
     font-size: calc(var(--mainMenuFontSize) - 1px);
-    margin-top:40px;
+    margin-top:calc(var(--mainBtnHeight) - 20px);
+    margin-bottom:calc(var(--mainBtnHeight) - 50px);
 }
 
 .mainContents{
     font-family: Noto Sans KR;
-    height: 60px;
+    height: var(--mainBtnHeight);
     margin:10px 0px 20px 0px;
     padding:0px 20px 0px 20px;
     color:#5d5d5d;
@@ -1007,6 +1014,7 @@
     margin-bottom: var(--mainBtnMarginBottom);
     border-radius: 100px;
     color: #fff;
+    font-weight: 700;
 }
 
 

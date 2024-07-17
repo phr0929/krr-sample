@@ -195,7 +195,7 @@ function Main() {
         style={{zIndex:100,position:'relative'}}
         slidesPerView={1.5}
         breakpoints={{
-          768:{
+          1025:{
             slidesPerView:3,
             centeredSlides:false,
           },}
@@ -269,7 +269,9 @@ function Main() {
         </div> */}
       {/* </div> */}
 
-      <div className='bottomLayout'>
+     
+    </div>
+    <div className='bottomLayout'>
         <div className='bottomLayoutIn'>
           <img src={skGray} alt=''/>
           <div className='bottomText'>
@@ -286,8 +288,6 @@ function Main() {
         </div>
         
       </div>
-    </div>
-    
     <img src={stars} alt='' className='stars' />
     <img src={circle} alt='' className='circle1'/>
     <img src={circle} alt='' className='circle2'/>
