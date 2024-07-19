@@ -74,7 +74,7 @@ function Lulu() {
   const [dialog,setDialog] = useState(false);
   const [dialogTitle,setDialogTitle] = useState('');
   const [dialogImg,setDialogImg] = useState(null);
-  const [navDialog,setNavDialog] = useState(false);
+  const [navDialog,setNavDialog] = useState(null);
   const [step,setStep] = useState(stepIdx) 
  
   const [ctgr,setCtgr] = useState(10)
@@ -100,55 +100,55 @@ function Lulu() {
   const contentsList = [
 
     // Step1 -> 1호
-    {week:1,css:'pinkbox',ctgr:10,title:'1주차 월요일',img:krr5115,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'805529277',workbook:testWorkbook1},
-    {week:1,css:'yellowbox',ctgr:10,title:'1주차 화요일',img:krr5115,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook1},
-    {week:1,css:'pinkbox',ctgr:10,title:'1주차 수요일',img:krr5115,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:1,css:'yellowbox',ctgr:10,title:'1주차 목요일',img:krr5115,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook1},
-    {week:1,css:'bluebox',ctgr:10,title:'1주차 금요일',img:krr5115,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook2},
+    {week:1,css:'pinkbox',ctgr:10,title:'1주차 월요일',img:krr5115,vimeo:'814084830',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:10,title:'1주차 화요일',img:krr5115,vimeo:'814084830',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',ctgr:10,title:'1주차 수요일',img:krr5115,vimeo:'814084767',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:10,title:'1주차 목요일',img:krr5115,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'bluebox',ctgr:10,title:'1주차 금요일',img:krr5115,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:2,css:'yellowbox',ctgr:10,title:'2주차 월요일',img:krr5121,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'805529277',workbook:testWorkbook3},
-    {week:2,css:'pinkbox',ctgr:10,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:2,css:'yellowbox',ctgr:10,title:'2주차 수요일',img:krr5123,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:2,css:'pinkbox',ctgr:10,title:'2주차 목요일',img:krr5124,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook1},
-    {week:2,css:'bluebox',ctgr:10,title:'2주차 금요일',img:krr5125,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
+    {week:2,css:'yellowbox',ctgr:10,title:'2주차 월요일',img:krr5121,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook3},
+    {week:2,css:'pinkbox',ctgr:10,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:10,title:'2주차 수요일',img:krr5123,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',ctgr:10,title:'2주차 목요일',img:krr5124,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'bluebox',ctgr:10,title:'2주차 금요일',img:krr5125,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:3,css:'pinkbox',ctgr:10,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
-    {week:3,css:'yellowbox',ctgr:10,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:3,css:'pinkbox',ctgr:10,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:3,css:'yellowbox',ctgr:10,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'',workbook:testWorkbook3},
-    {week:3,css:'bluebox',ctgr:10,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook2},
+    {week:3,css:'pinkbox',ctgr:10,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:10,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',ctgr:10,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:10,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook3},
+    {week:3,css:'bluebox',ctgr:10,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:4,css:'yellowbox',ctgr:10,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook1},
+    {week:4,css:'yellowbox',ctgr:10,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'',workbook:''},
     {week:4,css:'pinkbox',ctgr:10,title:'4주차 화요일',img:krr5142,vimeo:'863486872',game:'',ppt:''},
-    {week:4,css:'yellowbox',ctgr:10,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
-    {week:4,css:'pinkbox',ctgr:10,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook2},
-    {week:4,css:'bluebox',ctgr:10,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook2},
+    {week:4,css:'yellowbox',ctgr:10,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',ctgr:10,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:4,css:'bluebox',ctgr:10,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
 
     // Step1 -> 2호
-    {week:1,css:'pinkbox',ctgr:20,title:'1주차 월요일',img:krr5112,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'805529277',workbook:testWorkbook1},
-    {week:1,css:'yellowbox',ctgr:20,title:'1주차 화요일',img:krr5112,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook1},
-    {week:1,css:'pinkbox',ctgr:20,title:'1주차 수요일',img:krr5112,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:1,css:'yellowbox',ctgr:20,title:'1주차 목요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook1},
-    {week:1,css:'bluebox',ctgr:20,title:'1주차 금요일',img:krr5112,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook2},
+    {week:1,css:'pinkbox',ctgr:20,title:'1주차 월요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:20,title:'1주차 화요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',ctgr:20,title:'1주차 수요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:20,title:'1주차 목요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'bluebox',ctgr:20,title:'1주차 금요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:2,css:'yellowbox',ctgr:20,title:'2주차 월요일',img:krr5122,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'805529277',workbook:testWorkbook3},
-    {week:2,css:'pinkbox',ctgr:20,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:2,css:'yellowbox',ctgr:20,title:'2주차 수요일',img:krr5122,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:2,css:'pinkbox',ctgr:20,title:'2주차 목요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook1},
-    {week:2,css:'bluebox',ctgr:20,title:'2주차 금요일',img:krr5122,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
+    {week:2,css:'yellowbox',ctgr:20,title:'2주차 월요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',ctgr:20,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:20,title:'2주차 수요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',ctgr:20,title:'2주차 목요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:2,css:'bluebox',ctgr:20,title:'2주차 금요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:3,css:'pinkbox',ctgr:20,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
-    {week:3,css:'yellowbox',ctgr:20,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:3,css:'pinkbox',ctgr:20,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'805529277',workbook:''},
-    {week:3,css:'yellowbox',ctgr:20,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'',workbook:testWorkbook3},
-    {week:3,css:'bluebox',ctgr:20,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook2},
+    {week:3,css:'pinkbox',ctgr:20,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:20,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',ctgr:20,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:20,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:3,css:'bluebox',ctgr:20,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
-    {week:4,css:'yellowbox',ctgr:20,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook1},
+    {week:4,css:'yellowbox',ctgr:20,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'',workbook:''},
     {week:4,css:'pinkbox',ctgr:20,title:'4주차 화요일',img:krr5142,vimeo:'863486872',game:'',ppt:''},
-    {week:4,css:'yellowbox',ctgr:20,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook3},
-    {week:4,css:'pinkbox',ctgr:20,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook2},
-    {week:4,css:'bluebox',ctgr:20,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'805529277',workbook:testWorkbook2},
+    {week:4,css:'yellowbox',ctgr:20,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',ctgr:20,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:4,css:'bluebox',ctgr:20,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'',workbook:''},
 
  
       
@@ -580,7 +580,7 @@ function Lulu() {
       </div>
       :''}
 
-
+    {navDialog!=null?
       <div className={navDialog?'navDialog navDialogOn':'navDialog navDialogOff'}> 
         <div className='navDialogStatusBar'>
           <div className='navDialogImgBar'>
@@ -619,7 +619,7 @@ function Lulu() {
           </div>
        
         </div>
-      </div> 
+      </div> :''}
 
 
     </div>

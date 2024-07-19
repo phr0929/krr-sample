@@ -72,7 +72,7 @@ function Krr() {
   const [dialog,setDialog] = useState(false);
   const [dialogTitle,setDialogTitle] = useState('');
   const [dialogImg,setDialogImg] = useState(null);
-  const [navDialog,setNavDialog] = useState(false);
+  const [navDialog,setNavDialog] = useState(null);
   const [step,setStep] = useState(stepIdx)  
 
   const [ctgr,setCtgr] = useState(10)
@@ -683,7 +683,7 @@ function Krr() {
       </div>
       :''}
 
-     
+     {navDialog!=null?
       <div className={navDialog?'navDialog navDialogOn':'navDialog navDialogOff'}> 
         <div className='navDialogStatusBar'>
           <div className='navDialogImgBar'>
@@ -722,7 +722,7 @@ function Krr() {
           </div>
        
         </div>
-      </div> 
+      </div> : ''}
 
       
     </div>
