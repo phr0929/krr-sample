@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { Route,Routes,useHistory} from "react-router-dom"
 import Main from './Main'
 import Krr from './Krr'
-import EliIvy from './EliIvy'
+import ElliIvy from './ElliIvy'
 import Lulu from './Lulu'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <Route path="/" element={<Main/>} />
 
             <Route path="/Krr" element={<Krr/>} />
-            <Route path="/EliIvy" element={<EliIvy/>} />
+            <Route path="/ElliIvy" element={<ElliIvy/>} />
             <Route path="/Lulu" element={<Lulu/>} />
 
         </Routes>

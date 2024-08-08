@@ -208,7 +208,7 @@
       --bottomTextMargin:30px 0px 0px 0px;
       --bottomBtnAlign:center;
       --bottomBtnMargin:40px 10px 30px 10px;
-      --menuTextFont:15px;
+      --menuTextFont:14px;
       --stepBtnMargin:20px; 
       --centerMarginTop:110px;
       --listMarginTop:5px; 
@@ -319,6 +319,7 @@
 .logoImg{
     cursor: pointer;
     width: var(--logoWidth);
+    height: auto;
     padding: 10px;
 }
 
@@ -474,6 +475,8 @@
 
 .sm{    
     cursor: pointer;
+    width: 51px;
+    max-width: 14vw;
 }
 
 @keyframes none{
@@ -864,7 +867,7 @@
     width: 100%;
     display: var(--listDisplay);
     padding:40px 0px 30px 0px;
-    font-size: var(--menuTextFont);
+    font-size: calc(var(--menuTextFont) + 1px);
 }
  
 .listTitleKrr{
@@ -1175,9 +1178,9 @@
 .navDialogMenuStep{
     display: flex;
     flex-direction: row;
-    font-size: 16px;
-    padding-top:5px;
-    padding-bottom:10px;
+    font-size: 15px;
+    padding-top:15px;
+    padding-bottom:5px;
     align-items: center;
 }
 

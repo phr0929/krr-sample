@@ -74,7 +74,7 @@ function Lulu() {
   const [dialog,setDialog] = useState(false);
   const [dialogTitle,setDialogTitle] = useState('');
   const [dialogImg,setDialogImg] = useState(null);
-  const [navDialog,setNavDialog] = useState(null);
+  const [navDialog,setNavDialog] = useState(false);
   const [step,setStep] = useState(stepIdx) 
  
   const [ctgr,setCtgr] = useState(10)
@@ -255,7 +255,7 @@ function Lulu() {
             </div>
             <div onMouseOver={()=>handleMenuMousOver(3)}
                      className={isHovering===3?'titleMenuOnLulu':'titleMenuOff'}
-                onClick={()=>handleStepChange(4,'../EliIvy/')}>EliIvy
+                onClick={()=>handleStepChange(4,'../ElliIvy/')}>ElliIvy
             </div>
             
             <div className='goSkBtn goSkLulu' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
@@ -279,7 +279,7 @@ function Lulu() {
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu/')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
                   <img src={krrStepOn0} alt=''/>
-                  <div className='menuText'>STEP0</div>
+                  <div className='menuText'>LITTLES</div>
                   <div className='menuLine lineOn0'/>
                   
                 </div>
@@ -324,14 +324,14 @@ function Lulu() {
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
               {/* <div style={{minWidth:300}}/> */}
               
-              <div onClick={()=>handleStepChange(4,'../EliIvy/')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(4,'../ElliIvy/')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn0} alt=''/>
-                <div className='menuText'>STEP0</div>
+                <div className='menuText'>LITTLES</div>
                 <div className='menuLine lineOn0'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(5,'../EliIvy/')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(5,'../ElliIvy/')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
                 <div className='menuLine lineOn1'/>
@@ -339,14 +339,14 @@ function Lulu() {
               </div>
             
 
-              <div onClick={()=>handleStepChange(6,'../EliIvy/')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(6,'../ElliIvy/')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
                 <div className='menuLine lineOn2'/>
                 
               </div>
 
-              <div onClick={()=>handleStepChange(7,'../EliIvy/')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(7,'../ElliIvy/')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
                 <div className='menuLine lineOn3'/>
@@ -580,7 +580,7 @@ function Lulu() {
       </div>
       :''}
 
-    {navDialog!=null?
+    {navDialog===true?
       <div className={navDialog?'navDialog navDialogOn':'navDialog navDialogOff'}> 
         <div className='navDialogStatusBar'>
           <div className='navDialogImgBar'>
@@ -597,7 +597,7 @@ function Lulu() {
           <div className='navDialogMenuLayout'>
             <div className='navDialogMenuTitle colorPink' onClick={()=>handleNavStepChange(0,'../Lulu/')}>안녕! 룰루</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(0,'../Lulu/')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>STEP0</div>
+              <div onClick={()=>handleNavStepChange(0,'../Lulu/')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
             </div>
           </div>
           <div className='navDialogMenuLayout'>
@@ -609,12 +609,12 @@ function Lulu() {
             </div>
           </div>
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(4,'../EliIvy/')}>EliIvy English</div>
+            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(4,'../ElliIvy/')}>ElliIvy English</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(4,'../EliIvy/')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP0</div>
-              <div onClick={()=>handleNavStepChange(5,'../EliIvy/')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
-              <div onClick={()=>handleNavStepChange(6,'../EliIvy/')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
-              <div onClick={()=>handleNavStepChange(7,'../EliIvy/')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
+              <div onClick={()=>handleNavStepChange(4,'../ElliIvy/')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>LITTLES</div>
+              <div onClick={()=>handleNavStepChange(5,'../ElliIvy/')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
+              <div onClick={()=>handleNavStepChange(6,'../ElliIvy/')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
+              <div onClick={()=>handleNavStepChange(7,'../ElliIvy/')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
             </div>
           </div>
        

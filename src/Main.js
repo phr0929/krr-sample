@@ -231,9 +231,9 @@ function Main() {
           </div> 
         </SwiperSlide>
         <SwiperSlide>
-          <div className='mainContentsLayout'   onClick={()=>navigate('./EliIvy')}>
+          <div className='mainContentsLayout'   onClick={()=>navigate('./ElliIvy')}>
             <img src={eliivyImg} alt=''/>
-            <div className='mainContentsTitle'>Eliivy English</div>
+            <div className='mainContentsTitle'>ElliIvy English</div>
             <div className='mainContents'>즐기면서 익히는<br/>신나는 영어세상!</div>
             <div className='mainContentsBtn' style={{backgroundColor:'#29b5b2'}}>
               {'컨텐츠 보러가기 >'}
