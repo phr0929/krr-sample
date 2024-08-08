@@ -96,17 +96,17 @@ function ElliIvy() {
 
   
   const musicList = [
-    {ctgr:104,img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:104,img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:104,css:'yellowbox',img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:104,css:'pinkbox',img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
 
-    {ctgr:105,img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:105,img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:105,css:'yellowbox',img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:105,css:'pinkbox',img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
 
-    {ctgr:106,img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:106,img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:106,css:'yellowbox',img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:106,css:'pinkbox',img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
 
-    {ctgr:107,img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:107,img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:107,css:'yellowbox',img:krr5115,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:107,css:'pinkbox',img:krr5113,vimoe:'863486872',title:'귤농장 노래'},
   ]
   const contentsList = [
 
@@ -565,7 +565,7 @@ function ElliIvy() {
                         {val.title}
                       </div>
                       
-                      <div className='contentsBtn'>
+                      {/* <div className='contentsBtn'>
                         {val.game!==''?
                           <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
                           :<img src={gameOff} alt='' />
@@ -578,7 +578,7 @@ function ElliIvy() {
                           <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
                           :<img src={workbookOff} alt='' />
                         }
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
@@ -598,7 +598,7 @@ function ElliIvy() {
                         {val.title}
                       </div>
                       
-                      <div className='contentsBtn'>
+                      {/* <div className='contentsBtn'>
                         {val.game!==''?
                           <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
                           :<img src={gameOff} alt='' />
@@ -611,7 +611,7 @@ function ElliIvy() {
                           <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
                           :<img src={workbookOff} alt='' />
                         }
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
@@ -631,7 +631,7 @@ function ElliIvy() {
                         {val.title}
                       </div>
                       
-                      <div className='contentsBtn'>
+                      {/* <div className='contentsBtn'>
                         {val.game!==''?
                           <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
                           :<img src={gameOff} alt='' />
@@ -644,7 +644,7 @@ function ElliIvy() {
                           <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
                           :<img src={workbookOff} alt='' />
                         }
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
@@ -664,7 +664,7 @@ function ElliIvy() {
                         {val.title}
                       </div>
                       
-                      <div className='contentsBtn'>
+                      {/* <div className='contentsBtn'>
                         {val.game!==''?
                           <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
                           :<img src={gameOff} alt='' />
@@ -677,7 +677,7 @@ function ElliIvy() {
                           <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
                           :<img src={workbookOff} alt='' />
                         }
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
@@ -685,7 +685,7 @@ function ElliIvy() {
               : 
               <div className='musicListLayout'>             
                    {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
-                  <div className='musicList yellowbox' key={idx}>
+                  <div className={`musicList ${val.css}`} key={idx}>
                     <img className='musicItem' src={val.img} alt=''/>
                     <div className='musicTitle'>
                       {val.title}

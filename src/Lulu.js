@@ -94,8 +94,8 @@ function Lulu() {
 
   
   const musicList = [
-    {ctgr:100,img:krr5121,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:100,img:krr5124,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:100,css:'yellowbox',img:krr5121,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:100,css:'pinkbox',img:krr5124,vimoe:'863486872',title:'귤농장 노래'},
   ]
   const contentsList = [
 
@@ -519,7 +519,7 @@ function Lulu() {
               : 
               <div className='musicListLayout'>             
                 {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
-                  <div className='musicList yellowbox' key={idx}>
+                  <div className={`musicList ${val.css}`} key={idx}>
                     <img className='musicItem' src={val.img} alt=''/>
                     <div className='musicTitle'>
                       {val.title}

@@ -94,14 +94,14 @@ function Krr() {
 
   
   const musicList = [
-    {ctgr:101,img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:101,img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:101,css:'yellowbox',img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:101,css:'pinkbox',img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
 
-    {ctgr:102,img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:102,img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:102,css:'yellowbox',img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:102,css:'pinkbox',img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
 
-    {ctgr:103,img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:103,img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:103,css:'yellowbox',img:krr5111,vimoe:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:103,css:'pinkbox',img:krr5112,vimoe:'863486872',title:'귤농장 노래'},
   ]
   const contentsList = [
     // Step1 -> 1호
@@ -558,7 +558,7 @@ function Krr() {
                 </div>
               
                 <div className='listLayout'>
-                {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===2).map((val,idx)=>
+                {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
                       <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
@@ -623,7 +623,7 @@ function Krr() {
               : 
               <div className='musicListLayout'>             
                 {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
-                  <div className='musicList yellowbox' key={idx}>
+                   <div className={`musicList ${val.css}`} key={idx}>
                     <img className='musicItem' src={val.img} alt=''/>
                     <div className='musicTitle'>
                       {val.title}

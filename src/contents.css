@@ -885,12 +885,15 @@
 }
 
 .musicList{
-
+ 
+    
     border-radius: 10px;
     margin-top:var(--musicListMarginTop);
     margin-left:30px;
     margin-right:30px;
     margin-bottom:50px;
+
+    
     padding:20px;
     display: flex;
     align-items: center;
@@ -904,6 +907,7 @@
     position: relative;
     overflow: hidden;
 
+    
     width: calc( var(--musicItemWidth));
     height: calc(var(--musicItemWidth) * 0.6); 
     border-radius: 10px;
