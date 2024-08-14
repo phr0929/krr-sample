@@ -90,7 +90,7 @@ function Main() {
   // 1학기 -> 0
   // 7호 -> 70
   // 8호 -> 80
-  // 기타 -> 100
+  // 잼보 -> 100
   
   const [pageWidth,setPageWidth] = useState('')
   const [swiper,setSwiper] = useState(false);

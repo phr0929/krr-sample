@@ -94,7 +94,7 @@ function App() {
             </div>
             <div style={{borderRadius:50,border:'2px solid #eee',boxSizing:'border-box',width:120,height:40,display:'flex',
               alignItems:'center',justifyContent:'center',marginLeft:10}}>
-              2호
+              4호
             </div> 
           </div>
 
