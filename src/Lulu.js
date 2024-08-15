@@ -21,26 +21,48 @@ import gameOff from './resource/ic_game_off.svg';
 import bg from './resource/bg.svg';
 import stars from './resource/stars.svg';
 import circle from './resource/circle.svg';
-import krr5111 from './resource/thumbnail/5-1-1-1.jpg';
-import krr5112 from './resource/thumbnail/5-1-1-2.jpg';
-import krr5113 from './resource/thumbnail/5-1-1-3.jpg';
-import krr5114 from './resource/thumbnail/5-1-1-4.jpg';
-import krr5115 from './resource/thumbnail/5-1-1-5.jpg';
-import krr5121 from './resource/thumbnail/5-1-2-1.jpg';
-import krr5122 from './resource/thumbnail/5-1-2-2.jpg';
-import krr5123 from './resource/thumbnail/5-1-2-3.jpg';
-import krr5124 from './resource/thumbnail/5-1-2-4.jpg';
-import krr5125 from './resource/thumbnail/5-1-2-5.jpg';
-import krr5131 from './resource/thumbnail/5-1-3-2.jpg';
-import krr5132 from './resource/thumbnail/5-1-3-1.jpg';
-import krr5133 from './resource/thumbnail/5-1-3-3.jpg';
-import krr5134 from './resource/thumbnail/5-1-3-4.jpg';
-import krr5135 from './resource/thumbnail/5-1-3-5.jpg';
-import krr5141 from './resource/thumbnail/5-1-4-1.jpg';
-import krr5142 from './resource/thumbnail/5-1-4-2.jpg';
-import krr5143 from './resource/thumbnail/5-1-4-3.jpg';
-import krr5144 from './resource/thumbnail/5-1-4-4.jpg';
-import krr5145 from './resource/thumbnail/5-1-4-5.jpg';
+
+import t0111 from './resource/thumbnail/룰루/littles/1호1주월.jpg';
+import t0112 from './resource/thumbnail/룰루/littles/1호1주화.jpg';
+import t0113 from './resource/thumbnail/룰루/littles/1호1주수.jpg';
+import t0114 from './resource/thumbnail/룰루/littles/1호1주목.jpg';
+import t0115 from './resource/thumbnail/룰루/littles/1호1주금.jpg';
+import t0121 from './resource/thumbnail/룰루/littles/1호2주월.jpg';
+import t0122 from './resource/thumbnail/룰루/littles/1호2주화.jpg';
+import t0123 from './resource/thumbnail/룰루/littles/1호2주수.jpg';
+import t0124 from './resource/thumbnail/룰루/littles/1호2주목.jpg';
+import t0125 from './resource/thumbnail/룰루/littles/1호2주금.jpg';
+import t0131 from './resource/thumbnail/룰루/littles/1호3주월.jpg';
+import t0132 from './resource/thumbnail/룰루/littles/1호3주화.jpg';
+import t0133 from './resource/thumbnail/룰루/littles/1호3주수.jpg';
+import t0134 from './resource/thumbnail/룰루/littles/1호3주목.jpg';
+import t0135 from './resource/thumbnail/룰루/littles/1호3주금.jpg';
+import t0141 from './resource/thumbnail/룰루/littles/1호4주월.jpg';
+import t0142 from './resource/thumbnail/룰루/littles/1호4주화.jpg';
+import t0143 from './resource/thumbnail/룰루/littles/1호4주수.jpg';
+import t0144 from './resource/thumbnail/룰루/littles/1호4주목.jpg';
+import t0145 from './resource/thumbnail/룰루/littles/1호4주금.jpg';
+
+import t0511 from './resource/thumbnail/룰루/littles/5호1주월.jpg';
+import t0512 from './resource/thumbnail/룰루/littles/5호1주화.jpg';
+import t0513 from './resource/thumbnail/룰루/littles/5호1주수.jpg';
+import t0514 from './resource/thumbnail/룰루/littles/5호1주목.jpg';
+import t0515 from './resource/thumbnail/룰루/littles/5호1주금.jpg';
+import t0521 from './resource/thumbnail/룰루/littles/5호2주월.jpg';
+import t0522 from './resource/thumbnail/룰루/littles/5호2주화.jpg';
+import t0523 from './resource/thumbnail/룰루/littles/5호2주수.jpg';
+import t0524 from './resource/thumbnail/룰루/littles/5호2주목.jpg';
+import t0525 from './resource/thumbnail/룰루/littles/5호2주금.jpg';
+import t0531 from './resource/thumbnail/룰루/littles/5호3주월.jpg';
+import t0532 from './resource/thumbnail/룰루/littles/5호3주화.jpg';
+import t0533 from './resource/thumbnail/룰루/littles/5호3주수.jpg';
+import t0534 from './resource/thumbnail/룰루/littles/5호3주목.jpg';
+import t0535 from './resource/thumbnail/룰루/littles/5호3주금.jpg';
+import t0541 from './resource/thumbnail/룰루/littles/5호4주월.jpg';
+import t0542 from './resource/thumbnail/룰루/littles/5호4주화.jpg';
+import t0543 from './resource/thumbnail/룰루/littles/5호4주수.jpg';
+import t0544 from './resource/thumbnail/룰루/littles/5호4주목.jpg';
+import t0545 from './resource/thumbnail/룰루/littles/5호4주금.jpg';
 
 import character from './resource/character.mp4';
 import luluCharacter from './resource/luluCharacter.mp4';
@@ -68,7 +90,7 @@ function Lulu() {
   const [isHovering, setIsHovering] = useState(1);
   // 룰루 -> 1
   // 까르르 -> 2
-  // 영어 -> 3
+  // 룰루 -> 3
   const [scrollDown,setScrollDown] = useState(true); 
   const [scrollY,setScrollY] = useState(0);
   const [dialog,setDialog] = useState(false);
@@ -94,61 +116,55 @@ function Lulu() {
 
   
   const musicList = [
-    {ctgr:100,css:'yellowbox',img:krr5121,vimoe:'863486872',title:'처음 나의 모습은?'},
-    {ctgr:100,css:'pinkbox',img:krr5124,vimoe:'863486872',title:'귤농장 노래'},
+    {ctgr:100,css:'yellowbox',img:t0111,vimeo:'863486872',title:'처음 나의 모습은?'},
+    {ctgr:100,css:'pinkbox',  img:t0111,vimeo:'863486872',title:'귤농장 노래'},
   ]
   const contentsList = [
 
     // Step1 -> 1호
-    {week:1,css:'pinkbox',ctgr:10,title:'1주차 월요일',img:krr5115,vimeo:'814084830',game:'',ppt:'',workbook:''},
-    {week:1,css:'yellowbox',ctgr:10,title:'1주차 화요일',img:krr5115,vimeo:'814084830',game:'',ppt:'',workbook:''},
-    {week:1,css:'pinkbox',ctgr:10,title:'1주차 수요일',img:krr5115,vimeo:'814084767',game:'',ppt:'',workbook:''},
-    {week:1,css:'yellowbox',ctgr:10,title:'1주차 목요일',img:krr5115,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:1,css:'pinkbox',ctgr:10,title:'1주차 금요일',img:krr5115,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:2,css:'yellowbox',ctgr:10,title:'2주차 월요일',img:krr5121,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook3},
-    {week:2,css:'pinkbox',ctgr:10,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'yellowbox',ctgr:10,title:'2주차 수요일',img:krr5123,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'pinkbox',ctgr:10,title:'2주차 목요일',img:krr5124,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'yellowbox',ctgr:10,title:'2주차 금요일',img:krr5125,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:3,css:'pinkbox',ctgr:10,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'yellowbox',ctgr:10,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'pinkbox',ctgr:10,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'yellowbox',ctgr:10,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'',ppt:'',workbook:testWorkbook3},
-    {week:3,css:'pinkbox',ctgr:10,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:4,css:'yellowbox',ctgr:10,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'pinkbox',ctgr:10,title:'4주차 화요일',img:krr5142,vimeo:'863486872',game:'',ppt:''},
-    {week:4,css:'yellowbox',ctgr:10,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'pinkbox',ctgr:10,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'yellowbox',ctgr:10,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:10,title:'1주차 월요일',img:t0111,vimeo:'814084830',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:10,title:'1주차 화요일',img:t0112,vimeo:'814084830',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:10,title:'1주차 수요일',img:t0113,vimeo:'814084767',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:10,title:'1주차 목요일',img:t0114,vimeo:'814084767',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:10,title:'1주차 금요일',img:t0115,vimeo:'814084767',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:10,title:'2주차 월요일',img:t0121,vimeo:'814089365',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',  ctgr:10,title:'2주차 화요일',img:t0122,vimeo:'814089365',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:10,title:'2주차 수요일',img:t0123,vimeo:'814089406',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',  ctgr:10,title:'2주차 목요일',img:t0124,vimeo:'814089406',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:10,title:'2주차 금요일',img:t0125,vimeo:'814089406',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:10,title:'3주차 월요일',img:t0131,vimeo:'814089716',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:10,title:'3주차 화요일',img:t0132,vimeo:'814089716',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:10,title:'3주차 수요일',img:t0133,vimeo:'814089754',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:10,title:'3주차 목요일',img:t0134,vimeo:'814089754',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:10,title:'3주차 금요일',img:t0135,vimeo:'814089754',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:10,title:'4주차 월요일',img:t0141,vimeo:'814089793',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',  ctgr:10,title:'4주차 화요일',img:t0142,vimeo:'814089793',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:10,title:'4주차 수요일',img:t0143,vimeo:'814089821',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',  ctgr:10,title:'4주차 목요일',img:t0144,vimeo:'814089821',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:10,title:'4주차 금요일',img:t0145,vimeo:'814089821',game:'',ppt:'',workbook:''},
 
 
     // Step1 -> 4호
-    {week:1,css:'pinkbox',ctgr:20,title:'1주차 월요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:1,css:'yellowbox',ctgr:20,title:'1주차 화요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:1,css:'pinkbox',ctgr:20,title:'1주차 수요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:1,css:'yellowbox',ctgr:20,title:'1주차 목요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:1,css:'pinkbox',ctgr:20,title:'1주차 금요일',img:krr5112,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:2,css:'yellowbox',ctgr:20,title:'2주차 월요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'pinkbox',ctgr:20,title:'2주차 화요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'yellowbox',ctgr:20,title:'2주차 수요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'pinkbox',ctgr:20,title:'2주차 목요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:2,css:'yellowbox',ctgr:20,title:'2주차 금요일',img:krr5122,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:3,css:'pinkbox',ctgr:20,title:'3주차 월요일',img:krr5131,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'yellowbox',ctgr:20,title:'3주차 화요일',img:krr5132,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'pinkbox',ctgr:20,title:'3주차 수요일',img:krr5133,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'yellowbox',ctgr:20,title:'3주차 목요일',img:krr5134,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:3,css:'pinkbox',ctgr:20,title:'3주차 금요일',img:krr5135,vimeo:'863486872',game:'',ppt:'',workbook:''},
-
-    {week:4,css:'yellowbox',ctgr:20,title:'4주차 월요일',img:krr5141,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'pinkbox',ctgr:20,title:'4주차 화요일',img:krr5142,vimeo:'863486872',game:'',ppt:''},
-    {week:4,css:'yellowbox',ctgr:20,title:'4주차 수요일',img:krr5143,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'pinkbox',ctgr:20,title:'4주차 목요일',img:krr5144,vimeo:'863486872',game:'',ppt:'',workbook:''},
-    {week:4,css:'yellowbox',ctgr:20,title:'4주차 금요일',img:krr5145,vimeo:'863486872',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:20,title:'1주차 월요일',img:t0511,vimeo:'841119499',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:20,title:'1주차 화요일',img:t0512,vimeo:'841119499',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:20,title:'1주차 수요일',img:t0513,vimeo:'841119583',game:'',ppt:'',workbook:''},
+    {week:1,css:'yellowbox',ctgr:20,title:'1주차 목요일',img:t0514,vimeo:'841119583',game:'',ppt:'',workbook:''},
+    {week:1,css:'pinkbox',  ctgr:20,title:'1주차 금요일',img:t0515,vimeo:'841119583',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:20,title:'2주차 월요일',img:t0521,vimeo:'841119644',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',  ctgr:20,title:'2주차 화요일',img:t0522,vimeo:'841119644',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:20,title:'2주차 수요일',img:t0523,vimeo:'841119739',game:'',ppt:'',workbook:''},
+    {week:2,css:'pinkbox',  ctgr:20,title:'2주차 목요일',img:t0524,vimeo:'841119739',game:'',ppt:'',workbook:''},
+    {week:2,css:'yellowbox',ctgr:20,title:'2주차 금요일',img:t0525,vimeo:'841119739',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:20,title:'3주차 월요일',img:t0531,vimeo:'842162035',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:20,title:'3주차 화요일',img:t0532,vimeo:'842162035',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:20,title:'3주차 수요일',img:t0533,vimeo:'842162188',game:'',ppt:'',workbook:''},
+    {week:3,css:'yellowbox',ctgr:20,title:'3주차 목요일',img:t0534,vimeo:'842162188',game:'',ppt:'',workbook:''},
+    {week:3,css:'pinkbox',  ctgr:20,title:'3주차 금요일',img:t0535,vimeo:'842162188',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:20,title:'4주차 월요일',img:t0541,vimeo:'842168055',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',  ctgr:20,title:'4주차 화요일',img:t0542,vimeo:'842168055',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:20,title:'4주차 수요일',img:t0543,vimeo:'842175681',game:'',ppt:'',workbook:''},
+    {week:4,css:'pinkbox',  ctgr:20,title:'4주차 목요일',img:t0544,vimeo:'842175681',game:'',ppt:'',workbook:''},
+    {week:4,css:'yellowbox',ctgr:20,title:'4주차 금요일',img:t0545,vimeo:'842175681',game:'',ppt:'',workbook:''},
 
  
       
@@ -391,9 +407,11 @@ function Lulu() {
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                       
                       
-                      <img className='contentsImgBox' src={val.img} alt=''/>
+                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
+                        <img src={val.img} alt=''/>
+                      </div>
                     
-                      <div className='contentsTitle'>
+                      <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
                       
@@ -427,7 +445,7 @@ function Lulu() {
                         <img src={val.img} alt=''/>
                       </div>
                     
-                      <div className='contentsTitle'>
+                      <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
                       
@@ -461,7 +479,7 @@ function Lulu() {
                         <img src={val.img} alt=''/>
                       </div>
                     
-                      <div className='contentsTitle'>
+                      <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
                       
@@ -494,7 +512,7 @@ function Lulu() {
                         <img src={val.img} alt=''/>
                       </div>
                     
-                      <div className='contentsTitle'>
+                      <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
                       
