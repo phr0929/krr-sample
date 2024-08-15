@@ -115,15 +115,15 @@ function Krr() {
     {ctgr:101,css:'pinkbox',img:zb1_4,vimeo:'998673755',game:'https://edujusk.kr/upload/program/vod_contents/Han8/',ppt:'998676685',title:'넌 우리 동물원에',title2:'어울리지 않아'},
     
 
-    {ctgr:102,css:'yellowbox',img:zb2_1,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'',title:'걱정쟁이 제레미'},
-    {ctgr:102,css:'pinkbox',img:zb2_2,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han10/',ppt:'',title:'걱정쟁이 제레미'},
-    {ctgr:102,css:'yellowbox',img:zb2_3,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han13/',ppt:'',title:'걱정쟁이 제레미'},
-    {ctgr:102,css:'pinkbox',img:zb2_4,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han10/',ppt:'',title:'걱정쟁이 제레미'},
+    {ctgr:102,css:'yellowbox',img:zb2_1,vimeo:'998674782',game:'https://edujusk.kr/upload/program/vod_contents/Han12/',ppt:'',title:'걱정쟁이 제레미가',title2:'바람에 휩쓸려 날아간 뒤'},
+    {ctgr:102,css:'pinkbox',img:zb2_2,  vimeo:'998674938',game:'https://edujusk.kr/upload/program/vod_contents/Han10/',ppt:'998677269',title:'걱정쟁이 제레미가',title2:'바람에 휩쓸려 날아간 뒤'},
+    {ctgr:102,css:'yellowbox',img:zb2_3,vimeo:'998674500',game:'https://edujusk.kr/upload/program/vod_contents/Han13/',ppt:'998677314',title:'걱정쟁이 제레미가',title2:'바람에 휩쓸려 날아간 뒤'},
+    {ctgr:102,css:'pinkbox',img:zb2_4,  vimeo:'998674684',game:'https://edujusk.kr/upload/program/vod_contents/Han10/',ppt:'998677344',title:'걱정쟁이 제레미가',title2:'바람에 휩쓸려 날아간 뒤'},
 
-    {ctgr:103,css:'yellowbox',img:zb3_1,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han37/',ppt:'',title:'내 친구는',title2:'유니콘이 아니야'},
-    {ctgr:103,css:'pinkbox',img:zb3_2,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han37/',ppt:'',title:'내 친구는',title2:'유니콘이 아니야'},
-    {ctgr:103,css:'yellowbox',img:zb3_3,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han36/',ppt:'',title:'내 친구는',title2:'유니콘이 아니야'},
-    {ctgr:103,css:'pinkbox',img:zb3_4,vimeo:'',game:'https://edujusk.kr/upload/program/vod_contents/Han36/',ppt:'',title:'내 친구는',title2:'유니콘이 아니야'},
+    {ctgr:103,css:'yellowbox',img:zb3_1,vimeo:'998675547',game:'https://edujusk.kr/upload/program/vod_contents/Han37/',ppt:'',title:'내 친구는',title2:'유니콘이 아니야'},
+    {ctgr:103,css:'pinkbox',img:zb3_2,  vimeo:'998675720',game:'https://edujusk.kr/upload/program/vod_contents/Han37/',ppt:'998678014',title:'내 친구는',title2:'유니콘이 아니야'},
+    {ctgr:103,css:'yellowbox',img:zb3_3,vimeo:'998675391',game:'https://edujusk.kr/upload/program/vod_contents/Han36/',ppt:'998677936',title:'내 친구는',title2:'유니콘이 아니야'},
+    {ctgr:103,css:'pinkbox',img:zb3_4,  vimeo:'998675468',game:'https://edujusk.kr/upload/program/vod_contents/Han36/',ppt:'998677976',title:'내 친구는',title2:'유니콘이 아니야'},
   ]
   const contentsList = [
     // Step1 -> 1호
@@ -339,16 +339,18 @@ function Krr() {
   }
  
   const handleGoVimeo = (link) => {
-    // window.open('https://vimeo.com/'+link,"_top")
-    let width = window.screen.width * 0.8;
-    let height = window.screen.height * 0.45;
-    let left = (window.screen.width - width) / 2;
-    let top = (window.screen.height - height) / 2;
-    // let option = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizeble=no, copyhistory=no, width=${width}, height=${height}, top=${top}, left=${left}`
+    window.open('https://vimeo.com/'+link,"_top")
+    // let width = window.screen.width * 0.8;
+    // let height = window.screen.height * 0.45;
+    // let left = (window.screen.width - width) / 2;
+    // let top = (window.screen.height - height) / 2;
+   
+    // const options = `top=${top}, left=${left}, width=${width}, height=${height},status=no, status=no, menubar=no, toolbar=no, resizable=no, location=no`;
+ // let option = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizeble=no, copyhistory=no, width=${width}, height=${height}, top=${top}, left=${left}`
     
-    const options = `top=${top}, left=${left}, width=${width}, height=${height},status=no, status=no, menubar=no, toolbar=no, resizable=no, location=no`;
-// window.open('https://player.vimeo.com/video/'+link, '_blank', options);
-window.open('https://player.vimeo.com/video/'+link, '_blank')
+    // window.open('https://player.vimeo.com/video/'+link, '_blank', options);
+// window.open('https://player.vimeo.com/video/'+link, '_blank')
+
 
     // window.open('https://player.vimeo.com/video/'+link,option)
   }

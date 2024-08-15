@@ -890,7 +890,7 @@ function ElliIvy() {
                     {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
                          
-                        <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)} style={{display:'flex',alignItems:'flex-start'}}>
+                        <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
                           <img src={val.img} alt=''/>
                         </div>
                         <div className='contentsTitle' style={{height:75}}>
@@ -903,7 +903,7 @@ function ElliIvy() {
 
                     {songList.filter((vval,vidx)=>vval.ctgr>=104).map((val,idx)=>
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
-                         <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)} style={{display:'flex',alignItems:'flex-start'}}>
+                         <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
                           <img src={val.img} alt=''/>
                         </div>
                         <div className='contentsTitle' style={{height:75}}>
