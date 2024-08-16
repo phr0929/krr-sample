@@ -6,13 +6,15 @@ import Krr from './Krr'
 import ElliIvy from './ElliIvy'
 import Lulu from './Lulu'
 
+
 function App() {
-  
+ 
+
   return (
+
     <div className='app'>
         <Routes>
             <Route path="/" element={<Main/>} />
-
             <Route path="/Krr" element={<Krr/>} />
             <Route path="/ElliIvy" element={<ElliIvy/>} />
             <Route path="/Lulu" element={<Lulu/>} />

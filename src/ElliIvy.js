@@ -614,16 +614,16 @@ function ElliIvy() {
           <div className='menuBarMenu'> 
 
             <div onMouseOver={()=>handleMenuMousOver(1)}
-              onClick={()=>handleStepChange(0,'../Lulu/')}
+              onClick={()=>handleStepChange(0,'../Lulu')}
               className={isHovering===1?'titleMenuOnEliivy':'titleMenuOff'}>룰루
             </div>
             <div onMouseOver={()=>handleMenuMousOver(2)}
               className={isHovering===2?'titleMenuOnEliivy':'titleMenuOff'}
-              onClick={()=>handleStepChange(1,'../Krr/')}>까르르한글수
+              onClick={()=>handleStepChange(1,'../Krr')}>까르르한글수
             </div>
             <div onMouseOver={()=>handleMenuMousOver(3)}
               className={isHovering===3?'titleMenuOnEliivy':'titleMenuOff'}
-              onClick={()=>handleStepChange(step,'../ElliIvy/')}>ElliIvy
+              onClick={()=>handleStepChange(step,'../ElliIvy')}>ElliIvy
             </div>
             
             <div className='goSkBtn goSkEliivy' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
@@ -645,7 +645,7 @@ function ElliIvy() {
           <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
                 <div style={{minWidth:465}}/>
                 
-                <div onClick={()=>handleStepChange(0,'../Lulu/')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
+                <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
                   <img src={krrStepOn0} alt='' />
                   <div className='menuText'>LITTLES</div>
                   <div className='menuLine lineOn3'/>
@@ -661,14 +661,14 @@ function ElliIvy() {
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
               <div style={{minWidth:355}}/>
               
-              <div onClick={()=>handleStepChange(1,'../Krr/')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(1,'../Krr')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
                 <div className='menuLine lineOn3'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(2,'../Krr/')}   className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(2,'../Krr')}   className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
                 <div className='menuLine lineOn3'/>
@@ -676,7 +676,7 @@ function ElliIvy() {
               </div>
             
 
-              <div onClick={()=>handleStepChange(3,'../Krr/')}   className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(3,'../Krr')}   className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
                 <div className='menuLine lineOn3'/>
@@ -692,14 +692,14 @@ function ElliIvy() {
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
               {/* <div style={{minWidth:300}}/> */}
               
-              <div onClick={()=>handleStepChange(4,'../ElliIvy/')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(4,'../ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn0} alt=''/>
                 <div className='menuText'>LITTLES</div>
                 <div className='menuLine lineOn3'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(5,'../ElliIvy/')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(5,'../ElliIvy')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn1} alt='' />
                 <div className='menuText'>STEP1</div>
                 <div className='menuLine lineOn3'/>
@@ -707,14 +707,14 @@ function ElliIvy() {
               </div>
             
 
-              <div onClick={()=>handleStepChange(6,'../ElliIvy/')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(6,'../ElliIvy')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn2} alt='' />
                 <div className='menuText'>STEP2</div>
                 <div className='menuLine lineOn3'/>
                 
               </div>
 
-              <div onClick={()=>handleStepChange(7,'../ElliIvy/')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(7,'../ElliIvy')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn3} alt='' />
                 <div className='menuText'>STEP3</div>
                 <div className='menuLine lineOn3'/>
@@ -759,8 +759,10 @@ function ElliIvy() {
                       
                 
 
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
 
                       <div className='contentsTitle' style={{height:75}}>
@@ -791,11 +793,12 @@ function ElliIvy() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===2).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
-                    
-                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                   
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
-
                       <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
@@ -824,8 +827,11 @@ function ElliIvy() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                     
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -857,8 +863,11 @@ function ElliIvy() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===4).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                 
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
 
                       <div className='contentsTitle' style={{height:75}}>
@@ -893,8 +902,11 @@ function ElliIvy() {
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
                      
 
-                     <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                    
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
 
 
@@ -910,8 +922,10 @@ function ElliIvy() {
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
                        
 
-                       <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
+                       <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
                         
                         <div className='contentsTitle' style={{height:75}}>
@@ -1024,26 +1038,26 @@ function ElliIvy() {
         </div>
         <div className='navDialogMenu'>  
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOfff' onClick={()=>handleNavStepChange(0,'../Lulu/')}>안녕! 룰루</div>
+            <div className='navDialogMenuTitleOfff' onClick={()=>handleNavStepChange(0,'../Lulu')}>안녕! 룰루</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(0,'../Lulu/')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
+              <div onClick={()=>handleNavStepChange(0,'../Lulu')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
             </div>
           </div>
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(1,'../Krr/')}>까르르한글수</div>
+            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(1,'../Krr')}>까르르한글수</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(1,'../Krr/')}   className={step===1?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'} >STEP1</div>
-              <div onClick={()=>handleNavStepChange(2,'../Krr/')}   className={step===2?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP2</div>
-              <div onClick={()=>handleNavStepChange(3,'../Krr/')}   className={step===3?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP3</div>
+              <div onClick={()=>handleNavStepChange(1,'../Krr')}   className={step===1?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'} >STEP1</div>
+              <div onClick={()=>handleNavStepChange(2,'../Krr')}   className={step===2?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP2</div>
+              <div onClick={()=>handleNavStepChange(3,'../Krr')}   className={step===3?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP3</div>
             </div>
           </div>
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitle colorBlue' onClick={()=>handleNavStepChange(step,'../ElliIvy/')}>ElliIvy English</div>
+            <div className='navDialogMenuTitle colorBlue' onClick={()=>handleNavStepChange(step,'../ElliIvy')}>ElliIvy English</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(4,'../ElliIvy/')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>LITTLES</div>
-              <div onClick={()=>handleNavStepChange(5,'../ElliIvy/')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
-              <div onClick={()=>handleNavStepChange(6,'../ElliIvy/')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
-              <div onClick={()=>handleNavStepChange(7,'../ElliIvy/')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
+              <div onClick={()=>handleNavStepChange(4,'../ElliIvy')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>LITTLES</div>
+              <div onClick={()=>handleNavStepChange(5,'../ElliIvy')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
+              <div onClick={()=>handleNavStepChange(6,'../ElliIvy')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
+              <div onClick={()=>handleNavStepChange(7,'../ElliIvy')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
             </div>
           </div>
        
