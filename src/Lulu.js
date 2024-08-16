@@ -409,7 +409,7 @@ function Lulu() {
                   
                       <div className='contentsImgBox'> 
                         <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
-                          <img src={val.img} alt=''/>
+                          <img src={val.img} alt='' style={{width:190}}/>
                         </a>
                       </div>
                     
@@ -445,7 +445,7 @@ function Lulu() {
               
                       <div className='contentsImgBox'> 
                         <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
-                          <img src={val.img} alt=''/>
+                          <img src={val.img} alt='' style={{width:190}}/>
                         </a>
                       </div>
                     

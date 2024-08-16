@@ -335,10 +335,10 @@ function ElliIvy() {
     
      // Step0 -> 1호  
      {week:1,css:'pinkbox',  ctgr:14,title:'1주차 월요일',img:t0111,vimeo:'999108671',game:'',ppt:'',workbook:''},
-     {week:1,css:'yellowbox',ctgr:14,title:'1주차 화요일',img:t0112,vimeo:'514885544',game:'',ppt:'',workbook:''},
-     {week:1,css:'pinkbox',  ctgr:14,title:'1주차 수요일',img:t0113,vimeo:'514884582',game:'',ppt:'',workbook:''},
-     {week:1,css:'yellowbox',ctgr:14,title:'1주차 목요일',img:t0114,vimeo:'514884766',game:'',ppt:'',workbook:''},
-     {week:1,css:'pinkbox',  ctgr:14,title:'1주차 금요일',img:t0115,vimeo:'514885036',game:'',ppt:'',workbook:''},
+     {week:1,css:'yellowbox',ctgr:14,title:'1주차 화요일',img:t0112,vimeo:'999599915',game:'',ppt:'',workbook:''},
+     {week:1,css:'pinkbox',  ctgr:14,title:'1주차 수요일',img:t0113,vimeo:'999601247',game:'',ppt:'',workbook:''},
+     {week:1,css:'yellowbox',ctgr:14,title:'1주차 목요일',img:t0114,vimeo:'999603045',game:'',ppt:'',workbook:''},
+     {week:1,css:'pinkbox',  ctgr:14,title:'1주차 금요일',img:t0115,vimeo:'999606058',game:'',ppt:'',workbook:''},
  
      {week:2,css:'yellowbox',ctgr:14,title:'2주차 월요일',img:t0121,vimeo:'514886081',game:'',ppt:'',workbook:''},
      {week:2,css:'pinkbox',  ctgr:14,title:'2주차 화요일',img:t0122,vimeo:'514885778',game:'',ppt:'',workbook:''},
