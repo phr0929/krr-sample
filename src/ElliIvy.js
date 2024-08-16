@@ -22,216 +22,217 @@ import bg from './resource/bg.svg';
 import stars from './resource/stars.svg';
 import circle from './resource/circle.svg';
 
-import song1 from './resource/thumbnail/영어/song/1.png';
-import song2 from './resource/thumbnail/영어/song/2.png';
-import song3 from './resource/thumbnail/영어/song/3.png';
-import song4 from './resource/thumbnail/영어/song/4.png';
-import song5 from './resource/thumbnail/영어/song/5.png';
-import song6 from './resource/thumbnail/영어/song/6.png';
-import song7 from './resource/thumbnail/영어/song/7.png';
-import song8 from './resource/thumbnail/영어/song/8.png';
-import song9 from './resource/thumbnail/영어/song/9.png';
-import song10 from './resource/thumbnail/영어/song/10.png';
-import song11 from './resource/thumbnail/영어/song/11.png';
-import song12 from './resource/thumbnail/영어/song/12.png';
-import song13 from './resource/thumbnail/영어/song/13.png';
-import song14 from './resource/thumbnail/영어/song/14.png';
-import song15 from './resource/thumbnail/영어/song/15.png';
-import song16 from './resource/thumbnail/영어/song/16.png';
-import song17 from './resource/thumbnail/영어/song/17.png';
-import song18 from './resource/thumbnail/영어/song/18.png';
-import song19 from './resource/thumbnail/영어/song/19.png';
+import song1 from './resource/thumbnail/En/song/1.png';
+import song2 from './resource/thumbnail/En/song/2.png';
+import song3 from './resource/thumbnail/En/song/3.png';
+import song4 from './resource/thumbnail/En/song/4.png';
+import song5 from './resource/thumbnail/En/song/5.png';
+import song6 from './resource/thumbnail/En/song/6.png';
+import song7 from './resource/thumbnail/En/song/7.png';
+import song8 from './resource/thumbnail/En/song/8.png';
+import song9 from './resource/thumbnail/En/song/9.png';
+import song10 from './resource/thumbnail/En/song/10.png';
+import song11 from './resource/thumbnail/En/song/11.png';
+import song12 from './resource/thumbnail/En/song/12.png';
+import song13 from './resource/thumbnail/En/song/13.png';
+import song14 from './resource/thumbnail/En/song/14.png';
+import song15 from './resource/thumbnail/En/song/15.png';
+import song16 from './resource/thumbnail/En/song/16.png';
+import song17 from './resource/thumbnail/En/song/17.png';
+import song18 from './resource/thumbnail/En/song/18.png';
+import song19 from './resource/thumbnail/En/song/19.png';
 
-import song011 from './resource/thumbnail/영어/littles/song11.png';
-import song012 from './resource/thumbnail/영어/littles/song12.png';
-import song051 from './resource/thumbnail/영어/littles/song51.png';
-import song052 from './resource/thumbnail/영어/littles/song52.png';
-
-
-import song111 from './resource/thumbnail/영어/step1/song11.png';
-import song112 from './resource/thumbnail/영어/step1/song12.png';
-import song151 from './resource/thumbnail/영어/step1/song51.png';
-import song152 from './resource/thumbnail/영어/step1/song52.png';
-
-import song211 from './resource/thumbnail/영어/step2/song11.png';
-import song212 from './resource/thumbnail/영어/step2/song12.png';
-import song251 from './resource/thumbnail/영어/step2/song51.png';
-import song252 from './resource/thumbnail/영어/step2/song52.png';
+import song011 from './resource/thumbnail/En/littles/song11.png';
+import song012 from './resource/thumbnail/En/littles/song12.png';
+import song051 from './resource/thumbnail/En/littles/song51.png';
+import song052 from './resource/thumbnail/En/littles/song52.png';
 
 
-import song311 from './resource/thumbnail/영어/step3/song11.png';
-import song312 from './resource/thumbnail/영어/step3/song12.png';
-import song351 from './resource/thumbnail/영어/step3/song51.png';
-import song352 from './resource/thumbnail/영어/step3/song52.png';
+import song111 from './resource/thumbnail/En/step1/song11.png';
+import song112 from './resource/thumbnail/En/step1/song12.png';
+import song151 from './resource/thumbnail/En/step1/song51.png';
+import song152 from './resource/thumbnail/En/step1/song52.png';
+
+import song211 from './resource/thumbnail/En/step2/song11.png';
+import song212 from './resource/thumbnail/En/step2/song12.png';
+import song251 from './resource/thumbnail/En/step2/song51.png';
+import song252 from './resource/thumbnail/En/step2/song52.png';
 
 
-import t0111 from './resource/thumbnail/영어/littles/1호1주월.jpg';
-import t0112 from './resource/thumbnail/영어/littles/1호1주화.jpg';
-import t0113 from './resource/thumbnail/영어/littles/1호1주수.jpg';
-import t0114 from './resource/thumbnail/영어/littles/1호1주목.jpg';
-import t0115 from './resource/thumbnail/영어/littles/1호1주금.jpg';
-import t0121 from './resource/thumbnail/영어/littles/1호2주월.jpg';
-import t0122 from './resource/thumbnail/영어/littles/1호2주화.jpg';
-import t0123 from './resource/thumbnail/영어/littles/1호2주수.jpg';
-import t0124 from './resource/thumbnail/영어/littles/1호2주목.jpg';
-import t0125 from './resource/thumbnail/영어/littles/1호2주금.jpg';
-import t0131 from './resource/thumbnail/영어/littles/1호3주월.jpg';
-import t0132 from './resource/thumbnail/영어/littles/1호3주화.jpg';
-import t0133 from './resource/thumbnail/영어/littles/1호3주수.jpg';
-import t0134 from './resource/thumbnail/영어/littles/1호3주목.jpg';
-import t0135 from './resource/thumbnail/영어/littles/1호3주금.jpg';
-import t0141 from './resource/thumbnail/영어/littles/1호4주월.jpg';
-import t0142 from './resource/thumbnail/영어/littles/1호4주화.jpg';
-import t0143 from './resource/thumbnail/영어/littles/1호4주수.jpg';
-import t0144 from './resource/thumbnail/영어/littles/1호4주목.jpg';
-import t0145 from './resource/thumbnail/영어/littles/1호4주금.jpg';
+import song311 from './resource/thumbnail/En/step3/song11.png';
+import song312 from './resource/thumbnail/En/step3/song12.png';
+import song351 from './resource/thumbnail/En/step3/song51.png';
+import song352 from './resource/thumbnail/En/step3/song52.png';
 
-import t0511 from './resource/thumbnail/영어/littles/5호1주월.jpg';
-import t0512 from './resource/thumbnail/영어/littles/5호1주화.jpg';
-import t0513 from './resource/thumbnail/영어/littles/5호1주수.jpg';
-import t0514 from './resource/thumbnail/영어/littles/5호1주목.jpg';
-import t0515 from './resource/thumbnail/영어/littles/5호1주금.jpg';
-import t0521 from './resource/thumbnail/영어/littles/5호2주월.jpg';
-import t0522 from './resource/thumbnail/영어/littles/5호2주화.jpg';
-import t0523 from './resource/thumbnail/영어/littles/5호2주수.jpg';
-import t0524 from './resource/thumbnail/영어/littles/5호2주목.jpg';
-import t0525 from './resource/thumbnail/영어/littles/5호2주금.jpg';
-import t0531 from './resource/thumbnail/영어/littles/5호3주월.jpg';
-import t0532 from './resource/thumbnail/영어/littles/5호3주화.jpg';
-import t0533 from './resource/thumbnail/영어/littles/5호3주수.jpg';
-import t0534 from './resource/thumbnail/영어/littles/5호3주목.jpg';
-import t0535 from './resource/thumbnail/영어/littles/5호3주금.jpg';
-import t0541 from './resource/thumbnail/영어/littles/5호4주월.jpg';
-import t0542 from './resource/thumbnail/영어/littles/5호4주화.jpg';
-import t0543 from './resource/thumbnail/영어/littles/5호4주수.jpg';
-import t0544 from './resource/thumbnail/영어/littles/5호4주목.jpg';
-import t0545 from './resource/thumbnail/영어/littles/5호4주금.jpg';
 
-import t1111 from './resource/thumbnail/영어/step1/1호1주월.jpg';
-import t1112 from './resource/thumbnail/영어/step1/1호1주화.jpg';
-import t1113 from './resource/thumbnail/영어/step1/1호1주수.jpg';
-import t1114 from './resource/thumbnail/영어/step1/1호1주목.jpg';
-import t1115 from './resource/thumbnail/영어/step1/1호1주금.jpg';
-import t1121 from './resource/thumbnail/영어/step1/1호2주월.jpg';
-import t1122 from './resource/thumbnail/영어/step1/1호2주화.jpg';
-import t1123 from './resource/thumbnail/영어/step1/1호2주수.jpg';
-import t1124 from './resource/thumbnail/영어/step1/1호2주목.jpg';
-import t1125 from './resource/thumbnail/영어/step1/1호2주금.jpg';
-import t1131 from './resource/thumbnail/영어/step1/1호3주월.jpg';
-import t1132 from './resource/thumbnail/영어/step1/1호3주화.jpg';
-import t1133 from './resource/thumbnail/영어/step1/1호3주수.jpg';
-import t1134 from './resource/thumbnail/영어/step1/1호3주목.jpg';
-import t1135 from './resource/thumbnail/영어/step1/1호3주금.jpg';
-import t1141 from './resource/thumbnail/영어/step1/1호4주월.jpg';
-import t1142 from './resource/thumbnail/영어/step1/1호4주화.jpg';
-import t1143 from './resource/thumbnail/영어/step1/1호4주수.jpg';
-import t1144 from './resource/thumbnail/영어/step1/1호4주목.jpg';
-import t1145 from './resource/thumbnail/영어/step1/1호4주금.jpg';
+import t0111 from './resource/thumbnail/En/littles/1-1-1.jpg';
+import t0112 from './resource/thumbnail/En/littles/1-1-2.jpg';
+import t0113 from './resource/thumbnail/En/littles/1-1-3.jpg';
+import t0114 from './resource/thumbnail/En/littles/1-1-4.jpg';
+import t0115 from './resource/thumbnail/En/littles/1-1-5.jpg';
+import t0121 from './resource/thumbnail/En/littles/1-2-1.jpg';
+import t0122 from './resource/thumbnail/En/littles/1-2-2.jpg';
+import t0123 from './resource/thumbnail/En/littles/1-2-3.jpg';
+import t0124 from './resource/thumbnail/En/littles/1-2-4.jpg';
+import t0125 from './resource/thumbnail/En/littles/1-2-5.jpg';
+import t0131 from './resource/thumbnail/En/littles/1-3-1.jpg';
+import t0132 from './resource/thumbnail/En/littles/1-3-2.jpg';
+import t0133 from './resource/thumbnail/En/littles/1-3-3.jpg';
+import t0134 from './resource/thumbnail/En/littles/1-3-4.jpg';
+import t0135 from './resource/thumbnail/En/littles/1-3-5.jpg';
+import t0141 from './resource/thumbnail/En/littles/1-4-1.jpg';
+import t0142 from './resource/thumbnail/En/littles/1-4-2.jpg';
+import t0143 from './resource/thumbnail/En/littles/1-4-3.jpg';
+import t0144 from './resource/thumbnail/En/littles/1-4-4.jpg';
+import t0145 from './resource/thumbnail/En/littles/1-4-5.jpg';
 
-import t1511 from './resource/thumbnail/영어/step1/5호1주월.jpg';
-import t1512 from './resource/thumbnail/영어/step1/5호1주화.jpg';
-import t1513 from './resource/thumbnail/영어/step1/5호1주수.jpg';
-import t1514 from './resource/thumbnail/영어/step1/5호1주목.jpg';
-import t1515 from './resource/thumbnail/영어/step1/5호1주금.jpg';
-import t1521 from './resource/thumbnail/영어/step1/5호2주월.jpg';
-import t1522 from './resource/thumbnail/영어/step1/5호2주화.jpg';
-import t1523 from './resource/thumbnail/영어/step1/5호2주수.jpg';
-import t1524 from './resource/thumbnail/영어/step1/5호2주목.jpg';
-import t1525 from './resource/thumbnail/영어/step1/5호2주금.jpg';
-import t1531 from './resource/thumbnail/영어/step1/5호3주월.jpg';
-import t1532 from './resource/thumbnail/영어/step1/5호3주화.jpg';
-import t1533 from './resource/thumbnail/영어/step1/5호3주수.jpg';
-import t1534 from './resource/thumbnail/영어/step1/5호3주목.jpg';
-import t1535 from './resource/thumbnail/영어/step1/5호3주금.jpg';
-import t1541 from './resource/thumbnail/영어/step1/5호4주월.jpg';
-import t1542 from './resource/thumbnail/영어/step1/5호4주화.jpg';
-import t1543 from './resource/thumbnail/영어/step1/5호4주수.jpg';
-import t1544 from './resource/thumbnail/영어/step1/5호4주목.jpg';
-import t1545 from './resource/thumbnail/영어/step1/5호4주금.jpg';
+import t0511 from './resource/thumbnail/En/littles/5-1-1.jpg';
+import t0512 from './resource/thumbnail/En/littles/5-1-2.jpg';
+import t0513 from './resource/thumbnail/En/littles/5-1-3.jpg';
+import t0514 from './resource/thumbnail/En/littles/5-1-4.jpg';
+import t0515 from './resource/thumbnail/En/littles/5-1-5.jpg';
+import t0521 from './resource/thumbnail/En/littles/5-2-1.jpg';
+import t0522 from './resource/thumbnail/En/littles/5-2-2.jpg';
+import t0523 from './resource/thumbnail/En/littles/5-2-3.jpg';
+import t0524 from './resource/thumbnail/En/littles/5-2-4.jpg';
+import t0525 from './resource/thumbnail/En/littles/5-2-5.jpg';
+import t0531 from './resource/thumbnail/En/littles/5-3-1.jpg';
+import t0532 from './resource/thumbnail/En/littles/5-3-2.jpg';
+import t0533 from './resource/thumbnail/En/littles/5-3-3.jpg';
+import t0534 from './resource/thumbnail/En/littles/5-3-4.jpg';
+import t0535 from './resource/thumbnail/En/littles/5-3-5.jpg';
+import t0541 from './resource/thumbnail/En/littles/5-4-1.jpg';
+import t0542 from './resource/thumbnail/En/littles/5-4-2.jpg';
+import t0543 from './resource/thumbnail/En/littles/5-4-3.jpg';
+import t0544 from './resource/thumbnail/En/littles/5-4-4.jpg';
+import t0545 from './resource/thumbnail/En/littles/5-4-5.jpg';
 
-import t2111 from './resource/thumbnail/영어/step2/1호1주월.jpg';
-import t2112 from './resource/thumbnail/영어/step2/1호1주화.jpg';
-import t2113 from './resource/thumbnail/영어/step2/1호1주수.jpg';
-import t2114 from './resource/thumbnail/영어/step2/1호1주목.jpg';
-import t2115 from './resource/thumbnail/영어/step2/1호1주금.jpg';
-import t2121 from './resource/thumbnail/영어/step2/1호2주월.jpg';
-import t2122 from './resource/thumbnail/영어/step2/1호2주화.jpg';
-import t2123 from './resource/thumbnail/영어/step2/1호2주수.jpg';
-import t2124 from './resource/thumbnail/영어/step2/1호2주목.jpg';
-import t2125 from './resource/thumbnail/영어/step2/1호2주금.jpg';
-import t2131 from './resource/thumbnail/영어/step2/1호3주월.jpg';
-import t2132 from './resource/thumbnail/영어/step2/1호3주화.jpg';
-import t2133 from './resource/thumbnail/영어/step2/1호3주수.jpg';
-import t2134 from './resource/thumbnail/영어/step2/1호3주목.jpg';
-import t2135 from './resource/thumbnail/영어/step2/1호3주금.jpg';
-import t2141 from './resource/thumbnail/영어/step2/1호4주월.jpg';
-import t2142 from './resource/thumbnail/영어/step2/1호4주화.jpg';
-import t2143 from './resource/thumbnail/영어/step2/1호4주수.jpg';
-import t2144 from './resource/thumbnail/영어/step2/1호4주목.jpg';
-import t2145 from './resource/thumbnail/영어/step2/1호4주금.jpg';
+import t1111 from './resource/thumbnail/En/step1/1-1-1.jpg';
+import t1112 from './resource/thumbnail/En/step1/1-1-2.jpg';
+import t1113 from './resource/thumbnail/En/step1/1-1-3.jpg';
+import t1114 from './resource/thumbnail/En/step1/1-1-4.jpg';
+import t1115 from './resource/thumbnail/En/step1/1-1-5.jpg';
+import t1121 from './resource/thumbnail/En/step1/1-2-1.jpg';
+import t1122 from './resource/thumbnail/En/step1/1-2-2.jpg';
+import t1123 from './resource/thumbnail/En/step1/1-2-3.jpg';
+import t1124 from './resource/thumbnail/En/step1/1-2-4.jpg';
+import t1125 from './resource/thumbnail/En/step1/1-2-5.jpg';
+import t1131 from './resource/thumbnail/En/step1/1-3-1.jpg';
+import t1132 from './resource/thumbnail/En/step1/1-3-2.jpg';
+import t1133 from './resource/thumbnail/En/step1/1-3-3.jpg';
+import t1134 from './resource/thumbnail/En/step1/1-3-4.jpg';
+import t1135 from './resource/thumbnail/En/step1/1-3-5.jpg';
+import t1141 from './resource/thumbnail/En/step1/1-4-1.jpg';
+import t1142 from './resource/thumbnail/En/step1/1-4-2.jpg';
+import t1143 from './resource/thumbnail/En/step1/1-4-3.jpg';
+import t1144 from './resource/thumbnail/En/step1/1-4-4.jpg';
+import t1145 from './resource/thumbnail/En/step1/1-4-5.jpg';
 
-import t2511 from './resource/thumbnail/영어/step2/5호1주월.jpg';
-import t2512 from './resource/thumbnail/영어/step2/5호1주화.jpg';
-import t2513 from './resource/thumbnail/영어/step2/5호1주수.jpg';
-import t2514 from './resource/thumbnail/영어/step2/5호1주목.jpg';
-import t2515 from './resource/thumbnail/영어/step2/5호1주금.jpg';
-import t2521 from './resource/thumbnail/영어/step2/5호2주월.jpg';
-import t2522 from './resource/thumbnail/영어/step2/5호2주화.jpg';
-import t2523 from './resource/thumbnail/영어/step2/5호2주수.jpg';
-import t2524 from './resource/thumbnail/영어/step2/5호2주목.jpg';
-import t2525 from './resource/thumbnail/영어/step2/5호2주금.jpg';
-import t2531 from './resource/thumbnail/영어/step2/5호3주월.jpg';
-import t2532 from './resource/thumbnail/영어/step2/5호3주화.jpg';
-import t2533 from './resource/thumbnail/영어/step2/5호3주수.jpg';
-import t2534 from './resource/thumbnail/영어/step2/5호3주목.jpg';
-import t2535 from './resource/thumbnail/영어/step2/5호3주금.jpg';
-import t2541 from './resource/thumbnail/영어/step2/5호4주월.jpg';
-import t2542 from './resource/thumbnail/영어/step2/5호4주화.jpg';
-import t2543 from './resource/thumbnail/영어/step2/5호4주수.jpg';
-import t2544 from './resource/thumbnail/영어/step2/5호4주목.jpg';
-import t2545 from './resource/thumbnail/영어/step2/5호4주금.jpg';
+import t1511 from './resource/thumbnail/En/step1/5-1-1.jpg';
+import t1512 from './resource/thumbnail/En/step1/5-1-2.jpg';
+import t1513 from './resource/thumbnail/En/step1/5-1-3.jpg';
+import t1514 from './resource/thumbnail/En/step1/5-1-4.jpg';
+import t1515 from './resource/thumbnail/En/step1/5-1-5.jpg';
+import t1521 from './resource/thumbnail/En/step1/5-2-1.jpg';
+import t1522 from './resource/thumbnail/En/step1/5-2-2.jpg';
+import t1523 from './resource/thumbnail/En/step1/5-2-3.jpg';
+import t1524 from './resource/thumbnail/En/step1/5-2-4.jpg';
+import t1525 from './resource/thumbnail/En/step1/5-2-5.jpg';
+import t1531 from './resource/thumbnail/En/step1/5-3-1.jpg';
+import t1532 from './resource/thumbnail/En/step1/5-3-2.jpg';
+import t1533 from './resource/thumbnail/En/step1/5-3-3.jpg';
+import t1534 from './resource/thumbnail/En/step1/5-3-4.jpg';
+import t1535 from './resource/thumbnail/En/step1/5-3-5.jpg';
+import t1541 from './resource/thumbnail/En/step1/5-4-1.jpg';
+import t1542 from './resource/thumbnail/En/step1/5-4-2.jpg';
+import t1543 from './resource/thumbnail/En/step1/5-4-3.jpg';
+import t1544 from './resource/thumbnail/En/step1/5-4-4.jpg';
+import t1545 from './resource/thumbnail/En/step1/5-4-5.jpg';
 
-import t3111 from './resource/thumbnail/영어/step3/1호1주월.jpg';
-import t3112 from './resource/thumbnail/영어/step3/1호1주화.jpg';
-import t3113 from './resource/thumbnail/영어/step3/1호1주수.jpg';
-import t3114 from './resource/thumbnail/영어/step3/1호1주목.jpg';
-import t3115 from './resource/thumbnail/영어/step3/1호1주금.jpg';
-import t3121 from './resource/thumbnail/영어/step3/1호2주월.jpg';
-import t3122 from './resource/thumbnail/영어/step3/1호2주화.jpg';
-import t3123 from './resource/thumbnail/영어/step3/1호2주수.jpg';
-import t3124 from './resource/thumbnail/영어/step3/1호2주목.jpg';
-import t3125 from './resource/thumbnail/영어/step3/1호2주금.jpg';
-import t3131 from './resource/thumbnail/영어/step3/1호3주월.jpg';
-import t3132 from './resource/thumbnail/영어/step3/1호3주화.jpg';
-import t3133 from './resource/thumbnail/영어/step3/1호3주수.jpg';
-import t3134 from './resource/thumbnail/영어/step3/1호3주목.jpg';
-import t3135 from './resource/thumbnail/영어/step3/1호3주금.jpg';
-import t3141 from './resource/thumbnail/영어/step3/1호4주월.jpg';
-import t3142 from './resource/thumbnail/영어/step3/1호4주화.jpg';
-import t3143 from './resource/thumbnail/영어/step3/1호4주수.jpg';
-import t3144 from './resource/thumbnail/영어/step3/1호4주목.jpg';
-import t3145 from './resource/thumbnail/영어/step3/1호4주금.jpg';
+import t2111 from './resource/thumbnail/En/step2/1-1-1.jpg';
+import t2112 from './resource/thumbnail/En/step2/1-1-2.jpg';
+import t2113 from './resource/thumbnail/En/step2/1-1-3.jpg';
+import t2114 from './resource/thumbnail/En/step2/1-1-4.jpg';
+import t2115 from './resource/thumbnail/En/step2/1-1-5.jpg';
+import t2121 from './resource/thumbnail/En/step2/1-2-1.jpg';
+import t2122 from './resource/thumbnail/En/step2/1-2-2.jpg';
+import t2123 from './resource/thumbnail/En/step2/1-2-3.jpg';
+import t2124 from './resource/thumbnail/En/step2/1-2-4.jpg';
+import t2125 from './resource/thumbnail/En/step2/1-2-5.jpg';
+import t2131 from './resource/thumbnail/En/step2/1-3-1.jpg';
+import t2132 from './resource/thumbnail/En/step2/1-3-2.jpg';
+import t2133 from './resource/thumbnail/En/step2/1-3-3.jpg';
+import t2134 from './resource/thumbnail/En/step2/1-3-4.jpg';
+import t2135 from './resource/thumbnail/En/step2/1-3-5.jpg';
+import t2141 from './resource/thumbnail/En/step2/1-4-1.jpg';
+import t2142 from './resource/thumbnail/En/step2/1-4-2.jpg';
+import t2143 from './resource/thumbnail/En/step2/1-4-3.jpg';
+import t2144 from './resource/thumbnail/En/step2/1-4-4.jpg';
+import t2145 from './resource/thumbnail/En/step2/1-4-5.jpg';
 
-import t3511 from './resource/thumbnail/영어/step3/5호1주월.jpg';
-import t3512 from './resource/thumbnail/영어/step3/5호1주화.jpg';
-import t3513 from './resource/thumbnail/영어/step3/5호1주수.jpg';
-import t3514 from './resource/thumbnail/영어/step3/5호1주목.jpg';
-import t3515 from './resource/thumbnail/영어/step3/5호1주금.jpg';
-import t3521 from './resource/thumbnail/영어/step3/5호2주월.jpg';
-import t3522 from './resource/thumbnail/영어/step3/5호2주화.jpg';
-import t3523 from './resource/thumbnail/영어/step3/5호2주수.jpg';
-import t3524 from './resource/thumbnail/영어/step3/5호2주목.jpg';
-import t3525 from './resource/thumbnail/영어/step3/5호2주금.jpg';
-import t3531 from './resource/thumbnail/영어/step3/5호3주월.jpg';
-import t3532 from './resource/thumbnail/영어/step3/5호3주화.jpg';
-import t3533 from './resource/thumbnail/영어/step3/5호3주수.jpg';
-import t3534 from './resource/thumbnail/영어/step3/5호3주목.jpg';
-import t3535 from './resource/thumbnail/영어/step3/5호3주금.jpg';
-import t3541 from './resource/thumbnail/영어/step3/5호4주월.jpg';
-import t3542 from './resource/thumbnail/영어/step3/5호4주화.jpg';
-import t3543 from './resource/thumbnail/영어/step3/5호4주수.jpg';
-import t3544 from './resource/thumbnail/영어/step3/5호4주목.jpg';
-import t3545 from './resource/thumbnail/영어/step3/5호4주금.jpg';
+import t2511 from './resource/thumbnail/En/step2/5-1-1.jpg';
+import t2512 from './resource/thumbnail/En/step2/5-1-2.jpg';
+import t2513 from './resource/thumbnail/En/step2/5-1-3.jpg';
+import t2514 from './resource/thumbnail/En/step2/5-1-4.jpg';
+import t2515 from './resource/thumbnail/En/step2/5-1-5.jpg';
+import t2521 from './resource/thumbnail/En/step2/5-2-1.jpg';
+import t2522 from './resource/thumbnail/En/step2/5-2-2.jpg';
+import t2523 from './resource/thumbnail/En/step2/5-2-3.jpg';
+import t2524 from './resource/thumbnail/En/step2/5-2-4.jpg';
+import t2525 from './resource/thumbnail/En/step2/5-2-5.jpg';
+import t2531 from './resource/thumbnail/En/step2/5-3-1.jpg';
+import t2532 from './resource/thumbnail/En/step2/5-3-2.jpg';
+import t2533 from './resource/thumbnail/En/step2/5-3-3.jpg';
+import t2534 from './resource/thumbnail/En/step2/5-3-4.jpg';
+import t2535 from './resource/thumbnail/En/step2/5-3-5.jpg';
+import t2541 from './resource/thumbnail/En/step2/5-4-1.jpg';
+import t2542 from './resource/thumbnail/En/step2/5-4-2.jpg';
+import t2543 from './resource/thumbnail/En/step2/5-4-3.jpg';
+import t2544 from './resource/thumbnail/En/step2/5-4-4.jpg';
+import t2545 from './resource/thumbnail/En/step2/5-4-5.jpg';
+
+import t3111 from './resource/thumbnail/En/step3/1-1-1.jpg';
+import t3112 from './resource/thumbnail/En/step3/1-1-2.jpg';
+import t3113 from './resource/thumbnail/En/step3/1-1-3.jpg';
+import t3114 from './resource/thumbnail/En/step3/1-1-4.jpg';
+import t3115 from './resource/thumbnail/En/step3/1-1-5.jpg';
+import t3121 from './resource/thumbnail/En/step3/1-2-1.jpg';
+import t3122 from './resource/thumbnail/En/step3/1-2-2.jpg';
+import t3123 from './resource/thumbnail/En/step3/1-2-3.jpg';
+import t3124 from './resource/thumbnail/En/step3/1-2-4.jpg';
+import t3125 from './resource/thumbnail/En/step3/1-2-5.jpg';
+import t3131 from './resource/thumbnail/En/step3/1-3-1.jpg';
+import t3132 from './resource/thumbnail/En/step3/1-3-2.jpg';
+import t3133 from './resource/thumbnail/En/step3/1-3-3.jpg';
+import t3134 from './resource/thumbnail/En/step3/1-3-4.jpg';
+import t3135 from './resource/thumbnail/En/step3/1-3-5.jpg';
+import t3141 from './resource/thumbnail/En/step3/1-4-1.jpg';
+import t3142 from './resource/thumbnail/En/step3/1-4-2.jpg';
+import t3143 from './resource/thumbnail/En/step3/1-4-3.jpg';
+import t3144 from './resource/thumbnail/En/step3/1-4-4.jpg';
+import t3145 from './resource/thumbnail/En/step3/1-4-5.jpg';
+
+import t3511 from './resource/thumbnail/En/step3/5-1-1.jpg';
+import t3512 from './resource/thumbnail/En/step3/5-1-2.jpg';
+import t3513 from './resource/thumbnail/En/step3/5-1-3.jpg';
+import t3514 from './resource/thumbnail/En/step3/5-1-4.jpg';
+import t3515 from './resource/thumbnail/En/step3/5-1-5.jpg';
+import t3521 from './resource/thumbnail/En/step3/5-2-1.jpg';
+import t3522 from './resource/thumbnail/En/step3/5-2-2.jpg';
+import t3523 from './resource/thumbnail/En/step3/5-2-3.jpg';
+import t3524 from './resource/thumbnail/En/step3/5-2-4.jpg';
+import t3525 from './resource/thumbnail/En/step3/5-2-5.jpg';
+import t3531 from './resource/thumbnail/En/step3/5-3-1.jpg';
+import t3532 from './resource/thumbnail/En/step3/5-3-2.jpg';
+import t3533 from './resource/thumbnail/En/step3/5-3-3.jpg';
+import t3534 from './resource/thumbnail/En/step3/5-3-4.jpg';
+import t3535 from './resource/thumbnail/En/step3/5-3-5.jpg';
+import t3541 from './resource/thumbnail/En/step3/5-4-1.jpg';
+import t3542 from './resource/thumbnail/En/step3/5-4-2.jpg';
+import t3543 from './resource/thumbnail/En/step3/5-4-3.jpg';
+import t3544 from './resource/thumbnail/En/step3/5-4-4.jpg';
+import t3545 from './resource/thumbnail/En/step3/5-4-5.jpg';
+
 import character from './resource/character.mp4';
 import luluCharacter from './resource/luluCharacter.mp4';
 import elliivyCharacter from './resource/elliivyCharacter.mp4';
@@ -756,8 +757,10 @@ function ElliIvy() {
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                       
                       
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                
+
+                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
 
                       <div className='contentsTitle' style={{height:75}}>
@@ -789,10 +792,10 @@ function ElliIvy() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===2).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
-                    
+
                       <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
@@ -821,9 +824,8 @@ function ElliIvy() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
-                    
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -855,10 +857,10 @@ function ElliIvy() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===4).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
-                    
+
                       <div className='contentsTitle' style={{height:75}}>
                         {val.title}
                       </div>
@@ -889,10 +891,13 @@ function ElliIvy() {
                   
                     {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
-                         
-                        <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                          <img src={val.img} alt=''/>
-                        </div>
+                     
+
+                     <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
+                      </div>
+
+
                         <div className='contentsTitle' style={{height:75}}>
                           {val.title}
                           {val.title2===''?'':<br/>}
@@ -903,9 +908,12 @@ function ElliIvy() {
 
                     {songList.filter((vval,vidx)=>vval.ctgr>=104).map((val,idx)=>
                       <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
-                         <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                          <img src={val.img} alt=''/>
-                        </div>
+                       
+
+                       <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
+                      </div>
+                        
                         <div className='contentsTitle' style={{height:75}}>
                           {val.title}
                           {val.title2===''?'':<br/>}

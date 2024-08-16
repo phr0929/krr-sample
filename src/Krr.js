@@ -21,20 +21,18 @@ import gameOff from './resource/ic_game_off.svg';
 import bg from './resource/bg.svg';
 import stars from './resource/stars.svg';
 import circle from './resource/circle.svg';
-import zb1_1 from './resource/thumbnail/잼보/동물원1.png';
-import zb1_2 from './resource/thumbnail/잼보/동물원2.png';
-import zb1_3 from './resource/thumbnail/잼보/동물원3.png';
-import zb1_4 from './resource/thumbnail/잼보/동물원4.png';
-
-import zb2_1 from './resource/thumbnail/잼보/제레미1.png';
-import zb2_2 from './resource/thumbnail/잼보/제레미2.png';
-import zb2_3 from './resource/thumbnail/잼보/제레미3.png';
-import zb2_4 from './resource/thumbnail/잼보/제레미4.png';
-
-import zb3_1 from './resource/thumbnail/잼보/유니콘1.png';
-import zb3_2 from './resource/thumbnail/잼보/유니콘2.png';
-import zb3_3 from './resource/thumbnail/잼보/유니콘3.png';
-import zb3_4 from './resource/thumbnail/잼보/유니콘4.png';
+import zb1_1 from './resource/thumbnail/Zembo/1-1.png';
+import zb1_2 from './resource/thumbnail/Zembo/1-2.png';
+import zb1_3 from './resource/thumbnail/Zembo/1-3.png';
+import zb1_4 from './resource/thumbnail/Zembo/1-4.png';
+import zb2_1 from './resource/thumbnail/Zembo/2-1.png';
+import zb2_2 from './resource/thumbnail/Zembo/2-2.png';
+import zb2_3 from './resource/thumbnail/Zembo/2-3.png';
+import zb2_4 from './resource/thumbnail/Zembo/2-4.png';
+import zb3_1 from './resource/thumbnail/Zembo/3-1.png';
+import zb3_2 from './resource/thumbnail/Zembo/3-2.png';
+import zb3_3 from './resource/thumbnail/Zembo/3-3.png';
+import zb3_4 from './resource/thumbnail/Zembo/3-4.png';
 
 import krr5111 from './resource/thumbnail/5-1-1-1.jpg';
 import krr5112 from './resource/thumbnail/5-1-1-2.jpg';
@@ -339,20 +337,16 @@ function Krr() {
   }
  
   const handleGoVimeo = (link) => {
-    window.open('https://vimeo.com/'+link,"_top")
-    // let width = window.screen.width * 0.8;
-    // let height = window.screen.height * 0.45;
-    // let left = (window.screen.width - width) / 2;
-    // let top = (window.screen.height - height) / 2;
+    let width = window.screen.width * 0.8;
+    let height = (window.screen.width * 0.8) *  0.5625;
+    let left = (window.screen.width - width) / 2;
+    let top = (window.screen.height - height) / 2;
    
-    // const options = `top=${top}, left=${left}, width=${width}, height=${height},status=no, status=no, menubar=no, toolbar=no, resizable=no, location=no`;
- // let option = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizeble=no, copyhistory=no, width=${width}, height=${height}, top=${top}, left=${left}`
+    let option = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizeble=no, copyhistory=no, width=${width}, height=${height}, left=${left}, top=${top}`
     
-    // window.open('https://player.vimeo.com/video/'+link, '_blank', options);
-// window.open('https://player.vimeo.com/video/'+link, '_blank')
 
 
-    // window.open('https://player.vimeo.com/video/'+link,option)
+    window.open('https://player.vimeo.com/video/'+link, '_blank', option)
   }
   
   const handleGame = (code) => {
@@ -530,11 +524,18 @@ function Krr() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===1).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
+                     
                       
-                      
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                         
+                      <div className='contentsImgBox'> 
+                        <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                          <img src={val.img} alt=''/>
+                        </a>
                       </div>
+                      
+                      {/* <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
+                      </div> */}
                     
                       <div className='contentsTitle' >
                         {val.title}
@@ -569,10 +570,16 @@ function Krr() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===2).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
+                      {/* <div className='contentsImgBox'>
+                        <a href={`https://vimeo.com/${val.vimeo}`} >
+                          <img src={val.img} alt=''/>
+                        </a>
+                      </div> */}
+
                       <div className='contentsTitle'>
                         {val.title}
                       </div>
@@ -606,8 +613,8 @@ function Krr() {
                 {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle'>
@@ -643,8 +650,8 @@ function Krr() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===4).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle'>
@@ -677,8 +684,10 @@ function Krr() {
                  
                   {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
                     <div className={`contentsLayout ${val.css}`} key={idx} style={{height:'fit-content'}}>
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                
+                    
+                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt='' style={{width:190}}/>
                       </div>
                       <div className='contentsTitle' style={{height:75}}>
                         {val.title}

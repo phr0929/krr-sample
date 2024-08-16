@@ -22,47 +22,46 @@ import bg from './resource/bg.svg';
 import stars from './resource/stars.svg';
 import circle from './resource/circle.svg';
 
-import t0111 from './resource/thumbnail/룰루/littles/1호1주월.jpg';
-import t0112 from './resource/thumbnail/룰루/littles/1호1주화.jpg';
-import t0113 from './resource/thumbnail/룰루/littles/1호1주수.jpg';
-import t0114 from './resource/thumbnail/룰루/littles/1호1주목.jpg';
-import t0115 from './resource/thumbnail/룰루/littles/1호1주금.jpg';
-import t0121 from './resource/thumbnail/룰루/littles/1호2주월.jpg';
-import t0122 from './resource/thumbnail/룰루/littles/1호2주화.jpg';
-import t0123 from './resource/thumbnail/룰루/littles/1호2주수.jpg';
-import t0124 from './resource/thumbnail/룰루/littles/1호2주목.jpg';
-import t0125 from './resource/thumbnail/룰루/littles/1호2주금.jpg';
-import t0131 from './resource/thumbnail/룰루/littles/1호3주월.jpg';
-import t0132 from './resource/thumbnail/룰루/littles/1호3주화.jpg';
-import t0133 from './resource/thumbnail/룰루/littles/1호3주수.jpg';
-import t0134 from './resource/thumbnail/룰루/littles/1호3주목.jpg';
-import t0135 from './resource/thumbnail/룰루/littles/1호3주금.jpg';
-import t0141 from './resource/thumbnail/룰루/littles/1호4주월.jpg';
-import t0142 from './resource/thumbnail/룰루/littles/1호4주화.jpg';
-import t0143 from './resource/thumbnail/룰루/littles/1호4주수.jpg';
-import t0144 from './resource/thumbnail/룰루/littles/1호4주목.jpg';
-import t0145 from './resource/thumbnail/룰루/littles/1호4주금.jpg';
-
-import t0511 from './resource/thumbnail/룰루/littles/5호1주월.jpg';
-import t0512 from './resource/thumbnail/룰루/littles/5호1주화.jpg';
-import t0513 from './resource/thumbnail/룰루/littles/5호1주수.jpg';
-import t0514 from './resource/thumbnail/룰루/littles/5호1주목.jpg';
-import t0515 from './resource/thumbnail/룰루/littles/5호1주금.jpg';
-import t0521 from './resource/thumbnail/룰루/littles/5호2주월.jpg';
-import t0522 from './resource/thumbnail/룰루/littles/5호2주화.jpg';
-import t0523 from './resource/thumbnail/룰루/littles/5호2주수.jpg';
-import t0524 from './resource/thumbnail/룰루/littles/5호2주목.jpg';
-import t0525 from './resource/thumbnail/룰루/littles/5호2주금.jpg';
-import t0531 from './resource/thumbnail/룰루/littles/5호3주월.jpg';
-import t0532 from './resource/thumbnail/룰루/littles/5호3주화.jpg';
-import t0533 from './resource/thumbnail/룰루/littles/5호3주수.jpg';
-import t0534 from './resource/thumbnail/룰루/littles/5호3주목.jpg';
-import t0535 from './resource/thumbnail/룰루/littles/5호3주금.jpg';
-import t0541 from './resource/thumbnail/룰루/littles/5호4주월.jpg';
-import t0542 from './resource/thumbnail/룰루/littles/5호4주화.jpg';
-import t0543 from './resource/thumbnail/룰루/littles/5호4주수.jpg';
-import t0544 from './resource/thumbnail/룰루/littles/5호4주목.jpg';
-import t0545 from './resource/thumbnail/룰루/littles/5호4주금.jpg';
+import t0111 from './resource/thumbnail/Lulu/littles/1-1-1.jpg';
+import t0112 from './resource/thumbnail/Lulu/littles/1-1-2.jpg';
+import t0113 from './resource/thumbnail/Lulu/littles/1-1-3.jpg';
+import t0114 from './resource/thumbnail/Lulu/littles/1-1-4.jpg';
+import t0115 from './resource/thumbnail/Lulu/littles/1-1-5.jpg';
+import t0121 from './resource/thumbnail/Lulu/littles/1-2-1.jpg';
+import t0122 from './resource/thumbnail/Lulu/littles/1-2-2.jpg';
+import t0123 from './resource/thumbnail/Lulu/littles/1-2-3.jpg';
+import t0124 from './resource/thumbnail/Lulu/littles/1-2-4.jpg';
+import t0125 from './resource/thumbnail/Lulu/littles/1-2-5.jpg';
+import t0131 from './resource/thumbnail/Lulu/littles/1-3-1.jpg';
+import t0132 from './resource/thumbnail/Lulu/littles/1-3-2.jpg';
+import t0133 from './resource/thumbnail/Lulu/littles/1-3-3.jpg';
+import t0134 from './resource/thumbnail/Lulu/littles/1-3-4.jpg';
+import t0135 from './resource/thumbnail/Lulu/littles/1-3-5.jpg';
+import t0141 from './resource/thumbnail/Lulu/littles/1-4-1.jpg';
+import t0142 from './resource/thumbnail/Lulu/littles/1-4-2.jpg';
+import t0143 from './resource/thumbnail/Lulu/littles/1-4-3.jpg';
+import t0144 from './resource/thumbnail/Lulu/littles/1-4-4.jpg';
+import t0145 from './resource/thumbnail/Lulu/littles/1-4-5.jpg';
+import t0511 from './resource/thumbnail/Lulu/littles/5-1-1.jpg';
+import t0512 from './resource/thumbnail/Lulu/littles/5-1-2.jpg';
+import t0513 from './resource/thumbnail/Lulu/littles/5-1-3.jpg';
+import t0514 from './resource/thumbnail/Lulu/littles/5-1-4.jpg';
+import t0515 from './resource/thumbnail/Lulu/littles/5-1-5.jpg';
+import t0521 from './resource/thumbnail/Lulu/littles/5-2-1.jpg';
+import t0522 from './resource/thumbnail/Lulu/littles/5-2-2.jpg';
+import t0523 from './resource/thumbnail/Lulu/littles/5-2-3.jpg';
+import t0524 from './resource/thumbnail/Lulu/littles/5-2-4.jpg';
+import t0525 from './resource/thumbnail/Lulu/littles/5-2-5.jpg';
+import t0531 from './resource/thumbnail/Lulu/littles/5-3-1.jpg';
+import t0532 from './resource/thumbnail/Lulu/littles/5-3-2.jpg';
+import t0533 from './resource/thumbnail/Lulu/littles/5-3-3.jpg';
+import t0534 from './resource/thumbnail/Lulu/littles/5-3-4.jpg';
+import t0535 from './resource/thumbnail/Lulu/littles/5-3-5.jpg';
+import t0541 from './resource/thumbnail/Lulu/littles/5-4-1.jpg';
+import t0542 from './resource/thumbnail/Lulu/littles/5-4-2.jpg';
+import t0543 from './resource/thumbnail/Lulu/littles/5-4-3.jpg';
+import t0544 from './resource/thumbnail/Lulu/littles/5-4-4.jpg';
+import t0545 from './resource/thumbnail/Lulu/littles/5-4-5.jpg';
 
 import character from './resource/character.mp4';
 import luluCharacter from './resource/luluCharacter.mp4';
@@ -407,8 +406,8 @@ function Lulu() {
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                       
                       
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -441,8 +440,8 @@ function Lulu() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===2).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -475,8 +474,8 @@ function Lulu() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -508,8 +507,8 @@ function Lulu() {
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===4).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
                     
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}>
-                        <img src={val.img} alt=''/>
+                    <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
+                        <img src={val.img} alt=''/> 
                       </div>
                     
                       <div className='contentsTitle' style={{height:75}}>
@@ -539,6 +538,7 @@ function Lulu() {
                 {musicList.filter((vval,vidx)=>vval.ctgr===step+ctgr).map((val,idx)=>
                   <div className={`musicList ${val.css}`} key={idx}>
                     <img className='musicItem' src={val.img} alt=''/>
+                    
                     <div className='musicTitle'>
                       {val.title}
                     </div>
