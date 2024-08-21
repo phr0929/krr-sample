@@ -185,8 +185,8 @@ function Lulu() {
       setScrollDown(false) 
       setScrollY(window.scrollY)
     }else{ 
-      // setScrollDown(true) 
-      // setScrollY(window.scrollY)
+      setScrollDown(true) 
+      setScrollY(window.scrollY)
     }
      
    

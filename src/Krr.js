@@ -387,10 +387,10 @@ function Krr() {
   
     if(window.scrollY>scrollY){
       setScrollDown(false) 
-      setScrollY(window.scrollY)
+      setScrollY(window.scrollY) 
     }else{ 
-      // setScrollDown(true) 
-      // setScrollY(window.scrollY)
+      setScrollDown(true) 
+      setScrollY(window.scrollY) 
     }
      
    
