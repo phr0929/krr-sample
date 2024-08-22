@@ -1,6 +1,6 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "까르르한글수 / ElliIvy English",
   "icons": [
     {
       "src": "logo64.png",
@@ -19,7 +19,7 @@
     }
   ],
   "start_url": "/",
-  "display": "standalone",
+  "display": "browser",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
