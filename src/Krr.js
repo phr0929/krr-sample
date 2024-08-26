@@ -419,7 +419,7 @@ function Krr() {
   const handleMouseOut = (idx) => {
     
     if(scrollY>=90){
-      setScrollDown(false)
+      // setScrollDown(false)
     }
 
     setIsHovering(idx)
