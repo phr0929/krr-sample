@@ -19,9 +19,9 @@ import playstore from '../resource/playstore.png'
 
 function M1_8() {
  
-  const [bgColor,setBgColor] = useState('#fed643')
-  const [boxColor,setBoxColor] = useState('#1f314d')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#f9c65e')
+  const [boxColor,setBoxColor] = useState('#ab6432')
+  const [textColor,setTextColor] = useState('#ab6432')
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/9VDFUarAuuU')
   const [issue,setIssue] = useState(8)
@@ -48,7 +48,7 @@ function M1_8() {
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
       <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
-        <div className='contentsLinkTextHome' style={{color:'#fff'}}>영상 시청</div>
+        <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
       <img src={mimg} alt='' className='mainImgHome'/>
     </div>

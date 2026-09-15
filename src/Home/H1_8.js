@@ -20,8 +20,8 @@ import video8 from './resource/8/h1_8.png'
 import video9 from './resource/8/h1_9.png'
 
 function H1_8() {
-  const [bgColor,setBgColor] = useState('#f7daa1')
-  const [boxColor,setBoxColor] = useState('#daae72')
+  const [bgColor,setBgColor] = useState('#f9c65e')
+  const [boxColor,setBoxColor] = useState('#ab6432')
   const [textColor,setTextColor] = useState('#ab6432')
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/ee9x2ahJ3W4')

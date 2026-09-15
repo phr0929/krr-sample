@@ -84,44 +84,44 @@ function Contents() {
     // Step1 -> 1호
     {subject:1,idx:0,step:1,vimeo:'864705323',},
     {subject:1,idx:1,step:1,vimeo:'864705602',}, 
-    {subject:1,idx:2,step:1,vimeo:'915837370',}, 
+    {subject:1,idx:2,step:1,vimeo:'1226808811',}, 
     {subject:1,idx:3,step:1,vimeo:'864705802',},
     {subject:1,idx:4,step:1,vimeo:'864706016',}, 
-    {subject:1,idx:5,step:1,vimeo:'915837782',},
+    {subject:1,idx:5,step:1,vimeo:'1226808811',},
     {subject:1,idx:6,step:1,vimeo:'864706235',},
     {subject:1,idx:7,step:1,vimeo:'864706417',}, 
-    {subject:1,idx:8,step:1,vimeo:'915837975',},
+    {subject:1,idx:8,step:1,vimeo:'919182551',},
     {subject:1,idx:9,step:1,vimeo:'864706554',},
     {subject:1,idx:10,step:1,vimeo:'864706655',}, 
-    {subject:1,idx:11,step:1,vimeo:'915838356',}, 
+    {subject:1,idx:11,step:1,vimeo:'919182551',}, 
 
     // Step2 -> 1호
     {subject:1,idx:0,step:2,vimeo:'864701372',},
     {subject:1,idx:1,step:2,vimeo:'864701619',}, 
-    {subject:1,idx:2,step:2,vimeo:'915841401',}, 
+    {subject:1,idx:2,step:2,vimeo:'1226808817',}, 
     {subject:1,idx:3,step:2,vimeo:'864701859',},
     {subject:1,idx:4,step:2,vimeo:'864702110',}, 
-    {subject:1,idx:5,step:2,vimeo:'915841645',},
+    {subject:1,idx:5,step:2,vimeo:'1226808817',},
     {subject:1,idx:6,step:2,vimeo:'864702342',},
     {subject:1,idx:7,step:2,vimeo:'864702533',}, 
-    {subject:1,idx:8,step:2,vimeo:'915841787',},
+    {subject:1,idx:8,step:2,vimeo:'919183166',},
     {subject:1,idx:9,step:2,vimeo:'864702688',},
     {subject:1,idx:10,step:2,vimeo:'864702817',}, 
-    {subject:1,idx:11,step:2,vimeo:'915841888',}, 
+    {subject:1,idx:11,step:2,vimeo:'919183166',}, 
 
     // Step3 -> 1호
     {subject:1,idx:0,step:3,vimeo:'864717846',},
     {subject:1,idx:1,step:3,vimeo:'864718121',}, 
-    {subject:1,idx:2,step:3,vimeo:'915842911',}, 
+    {subject:1,idx:2,step:3,vimeo:'1226808812',}, 
     {subject:1,idx:3,step:3,vimeo:'864718367',},
     {subject:1,idx:4,step:3,vimeo:'864718482',}, 
-    {subject:1,idx:5,step:3,vimeo:'915843139',},
+    {subject:1,idx:5,step:3,vimeo:'1226808812',},
     {subject:1,idx:6,step:3,vimeo:'864718629',},
     {subject:1,idx:7,step:3,vimeo:'864718770',}, 
-    {subject:1,idx:8,step:3,vimeo:'915843332',}, 
+    {subject:1,idx:8,step:3,vimeo:'919183736',}, 
     {subject:1,idx:9,step:3,vimeo:'864718890',},
     {subject:1,idx:10,step:3,vimeo:'864719022',}, 
-    {subject:1,idx:11,step:3,vimeo:'915843707',}, 
+    {subject:1,idx:11,step:3,vimeo:'919183736',}, 
     
    ]
  
@@ -350,25 +350,25 @@ function Contents() {
                 <div className='week26' style={{backgroundColor:'#FDCE56', borderColor:'#FDCE56'}}>1주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,0)}>한글 1</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,1)}>한글 2</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,2)}>잼보 1</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,2)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#FDCE56', borderColor:'#FDCE56'}}>2주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,3)}>한글 3</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,4)}>한글 4</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,5)}>잼보 2</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,5)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#FDCE56', borderColor:'#FDCE56'}}>3주</div>
                 <div className='contentName26Han'onClick={()=>handleGoVimeo(1,1,6)}>한글 5</div>
                 <div className='contentName26Han'onClick={()=>handleGoVimeo(1,1,7)}>한글 6</div>
-                <div className='contentName26Han'onClick={()=>handleGoVimeo(1,1,8)}>잼보 3</div>  
+                <div className='contentName26Han'onClick={()=>handleGoVimeo(1,1,8)}>동화</div>  
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#FDCE56', borderColor:'#FDCE56'}}>4주</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,8)}>한글 7</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,9)}>한글 8</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,10)}>잼보 4</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,9)}>한글 7</div>
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,10)}>한글 8</div>
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,1,11)}>동화</div> 
               </div>
           </div> 
     
@@ -384,25 +384,25 @@ function Contents() {
                 <div className='week26' style={{backgroundColor:'#B6D86E', borderColor:'#B6D86E'}}>1주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,0)}>한글 1</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,1)}>한글 2</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,2)}>잼보 1</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,2)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#B6D86E', borderColor:'#B6D86E'}}>2주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,3)}>한글 3</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,4)}>한글 4</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,5)}>잼보 2</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,5)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#B6D86E', borderColor:'#B6D86E'}}>3주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,6)}>한글 5</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,7)}>한글 6</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,8)}>잼보 3</div>  
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,8)}>동화</div>  
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#B6D86E', borderColor:'#B6D86E'}}>4주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,9)}>한글 7</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,10)}>한글 8</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,11)}>잼보 4</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,2,11)}>동화</div> 
               </div>
           </div>
     
@@ -418,25 +418,25 @@ function Contents() {
                 <div className='week26' style={{backgroundColor:'#8EBEE0', borderColor:'#8EBEE0'}}>1주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,0)}>한글 1</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,1)}>한글 2</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,2)}>잼보 1</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,2)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#8EBEE0', borderColor:'#8EBEE0'}}>2주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,3)}>한글 3</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,4)}>한글 4</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,5)}>잼보 2</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,5)}>동화</div> 
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#8EBEE0', borderColor:'#8EBEE0'}}>3주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,6)}>한글 5</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,7)}>한글 6</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,8)}>잼보 3</div>  
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,8)}>동화</div>  
               </div>
                 <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#8EBEE0', borderColor:'#8EBEE0'}}>4주</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,9)}>한글 7</div>
                 <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,10)}>한글 8</div>
-                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,11)}>잼보 4</div> 
+                <div className='contentName26Han' onClick={()=>handleGoVimeo(1,3,11)}>동화</div> 
               </div>
           </div>  
         </div>

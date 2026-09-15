@@ -15,8 +15,8 @@ import video3 from './resource/8/h3_3.png'
 import video4 from './resource/8/h3_4.png' 
 
 function H3_8() {
-  const [bgColor,setBgColor] = useState('#f7daa1')
-  const [boxColor,setBoxColor] = useState('#daae72')
+  const [bgColor,setBgColor] = useState('#f9c65e')
+  const [boxColor,setBoxColor] = useState('#ab6432')
   const [textColor,setTextColor] = useState('#ab6432')
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/Lns4qgP0TV0')
